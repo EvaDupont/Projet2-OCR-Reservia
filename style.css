@@ -191,12 +191,29 @@ article
     margin-right: 15px;
 }
 
-.cannebiere
+.fiche-hotel-cannebiere
 {
-    background-image: url("images/hebergements/cannebiere.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 2px grey; 
+    border: solid 5px white;
+    position : relative;
+    width: 175px;
+    height: 75px;
+    margin : 30px 10px 50px 10px;
+    padding: 50px 20px 20px 20px;  
 }
+
+.radius
+{
+    border-radius: 10px 10px 0px 0px;
+    width : 215px;
+    height : 115px;
+    position : relative;
+    right: 20px;
+    bottom : 50px;
+   
+}
+
 
 .port
 {
@@ -239,7 +256,7 @@ article
     
 }
 
-.cannebiere, .port, .mouette, .mer, .panier, .amina
+.port, .mouette, .mer, .panier, .amina
 {
     border-radius: 10px 10px 0px 0px;
     box-shadow: 2px 2px 2px grey; 
