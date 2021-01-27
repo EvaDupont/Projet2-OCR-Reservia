@@ -115,10 +115,7 @@ nav a:hover
 .filtres
 {
    display: flex;
-   flex-flow: row wrap;
-   justify-content: flex-start;
    align-items: baseline;
-   align-content: flex-start;
    margin-left: 30px;
    font-weight: bold;
    
@@ -534,6 +531,39 @@ dt
         color: white;
     }
      
+    .filtres
+    {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       justify-content: center;
+       align-items: baseline;
+       font-weight: bold; 
+    }
+
+    .filtres-row
+    {
+        display: flex;
+    }
+    .border_filtre
+    {
+        border: #F2F2F2 solid 2px; 
+        border-radius: 20px;
+        padding-right: 10px;
+        margin : 0px 10px 10px 10px;
+
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 ul 
