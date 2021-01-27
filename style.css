@@ -64,6 +64,7 @@ nav a:hover
 }
 
 /* Formulaire Recherche de ville*/
+
 .form_recherche
 {
     display : flex;
@@ -92,7 +93,7 @@ nav a:hover
     color: #F2F2F2;
 }
 
-button
+.responsive
 {
     display: none;
 }
@@ -506,21 +507,21 @@ dt
         width : auto
     }
 
-    nav ul 
+    header, .titre-site, .chapeau-titre
     {
-        width: auto;
-        flex-wrap: wrap;
-        justify-content: flex-end;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
-    nav a:hover
+    .responsive 
     {
-        color: #0065FC;
-        border-bottom: 3px solid  #0065FC; 
-        border-top: none;
-
+        display: contents;
+    
     }
-
+    .desktop
+    {
+        display: none;
+    }
     button
     {
        background: #0065FC; 
@@ -532,6 +533,60 @@ dt
     {
         color: white;
     }
+     
+
+
+ul 
+    {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        justify-content: flex-end;
+        padding-left: 130px;
+    
+    }
+    nav li
+    {
+        margin-right: 50px; 
+    } 
+    
+    a
+    {
+        text-decoration: none;
+        color: black;
+       
+
+    }
+    #hebergement:hover
+    {
+        color: #0065FC; 
+        border-top: 3px solid #0065FC;
+        padding-bottom: 10px;
+        
+    }
+
+    #inscription
+    {
+        color:#0065FC ;
+        font-weight: bold;  
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 
     section
     {

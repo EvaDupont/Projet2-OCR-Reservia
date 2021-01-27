@@ -26,20 +26,26 @@
             <h1 class="titre-site"> Trouvez votre hébergement pour des vacances de rêves </h1> 
                 <p class="chapeau-titre">En plein centre ville ou en pleine nature</p>
         
-           <div>
-               <form class="form_recherche" method="POST" action="traitement.php">
+            <div class="desktop">
+                <form class="form_recherche" method="POST" action="traitement.php">
                     <div id="picto_ville"><i class="fas fa-map-marker-alt"></i></div>
                     <div><input id="texte_ville" type="text" name="Ville" placeholder="Marseille, France"></div>
-                    
-                    <div class="search"><input id="texte_recherche" type="submit" value="Rechercher"></div>  
-                    <button type="submit">
-                            <i class="fa fa-search white"></i>
-                    </button>  
-                         
-                
+                    <div class="search"><input id="texte_recherche" type="submit" value="Rechercher"></div>
+                </form>     
+            </div>
+
+            <div class="responsive">
+                <form class="form_recherche" method="POST" action="traitement.php">
+                    <div id="picto_ville"><i class="fas fa-map-marker-alt"></i></div>
+                    <div><input id="texte_ville" type="text" name="Ville" placeholder="Marseille, France"></div>
+                    <div>
+                        <button>
+                            <i class="fas fa-search white"></i>
+                        </button></div>
                 </form> 
             </div>
-    
+               
+
             <div class="filtres">
                 <p> Filtres </p>
 
