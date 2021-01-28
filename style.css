@@ -362,6 +362,82 @@ aside
     flex-direction: column;
 }
 
+.fiche-activite-deuxblocs-fort
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 75%;
+    border-radius: 10px 10px 0px 0px; 
+    box-shadow: 2px 2px 2px gray;
+    position : relative;
+    width: 185px;
+    height: 110px;
+    margin : 20px 5px 20px 5px;
+    padding: 50px 20px 20px 20px;
+}
+
+.radius-deuxblocs-fort
+{
+    border-radius: 10px 10px 0px 0px;
+    width : 230px;
+    height : 180px;
+    position : relative;
+    right: 25px;
+    bottom : 50px;
+}
+
+.texte-deuxblocs-fort
+{
+    position : absolute;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+    padding : 10px 10px 10px 10px;
+    width: 210px;
+    height: 20px;
+    top : 140px;
+    left : -5px;
+    box-shadow: 2px 2px 2px gray;
+    font-weight: bold;
+}
+
+.fiche-activite-deuxblocs-iles
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 75%;
+    border-radius: 10px 10px 0px 0px; 
+    box-shadow: 2px 2px 2px gray;
+    position : relative;
+    width: 185px;
+    height: 40px;
+    margin : 20px 5px 20px 5px;
+    padding: 50px 20px 20px 20px;
+}
+
+.radius-deuxblocs-iles
+{
+    border-radius: 10px 10px 0px 0px;
+    width : 230px;
+    height : 80px;
+    position : relative;
+    right: 25px;
+    bottom : 50px; 
+}
+
+.texte-deuxblocs-iles
+{
+    position : absolute;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+    padding : 10px 10px 10px 10px;
+    width: 210px;
+    height: 20px;
+    top : 65px;
+    left : -5px;
+    box-shadow: 2px 2px 2px gray;
+    font-weight: bold;
+}
+
 .fiche-activite-deuxblocs
 {
     background-size: cover;
