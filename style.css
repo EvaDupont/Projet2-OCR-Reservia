@@ -191,7 +191,7 @@ article
     margin-right: 15px;
 }
 
-.fiche-hotel-cannebiere
+.fiche-hotel
 {
     border-radius: 10px 10px 0px 0px;
     box-shadow: 2px 2px 2px grey; 
@@ -200,7 +200,8 @@ article
     width: 175px;
     height: 75px;
     margin : 30px 10px 50px 10px;
-    padding: 50px 20px 20px 20px;  
+    padding: 50px 20px 20px 20px;
+      
 }
 
 .radius
@@ -211,62 +212,9 @@ article
     position : relative;
     right: 20px;
     bottom : 50px;
-   
 }
 
 
-.port
-{
-    background-image: url("images/hebergements/port.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.mouette
-{
-    background-image: url("images/hebergements/mouette.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
-.mer
-{
-    background-image: url("images/hebergements/mer.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-    
-}
-
-.panier
-{
-    background-image: url("images/hebergements/panier.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
-.amina
-{
-    background-image : url("images/hebergements/amina.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-
-.port, .mouette, .mer, .panier, .amina
-{
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: 2px 2px 2px grey; 
-    border: solid 5px white;
-    position : relative;
-    width: 175px;
-    height: 75px;
-    margin : 30px 10px 50px 10px;
-    padding: 50px 20px 20px 20px; 
-}
 
 .texte-hotel
 {   
@@ -281,6 +229,8 @@ article
     top : 100px;
     left : -5px;
     line-height: 1.3em;
+    
+    
 }
 
 /*Section Populaire*/
@@ -310,38 +260,14 @@ aside
    margin-bottom: 10px;
 }
 
-.soleil-matin
-{
-    background-image: url("images/hebergements/soleil-matin.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-.chambre-hote
-{
-    background-image: url("images/hebergements/chambre-hote.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position:left 70%;
-}
-
-.blc-bleu
-{
-    background-image: url("images/hebergements/blc-bleu.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.soleil-matin, .chambre-hote, .blc-bleu
+.fiche-populaire
 {
     border-radius: 10px 0px 0px 10px; 
     box-shadow: 2px 2px 2px gray;
     border: solid 5px white;
     position : relative;
-    width: 120px;
-    height: 85px;
+    width: 200px;
+    height: 90px;
     margin : 30px 10px 10px 10px;
     padding: 20px 50px 20px 20px;
 }
@@ -355,10 +281,21 @@ aside
     border: solid 5px white;
     padding : 10px;
     width: 155px;
-    height: 105px;
-    left : 100px;
+    height: 110px;
+    left : 130px;
     top : -21px;
     line-height: 1.3em; 
+}
+
+.radius-populaire
+{
+    border-radius: 10px 0px 0px 10px;
+    width : 130px;
+    height : 130px;
+    position : relative;
+    right: 20px;
+    bottom : 20px;
+    background-size: cover;
 }
 
 /* Activités */
@@ -367,9 +304,8 @@ aside
 {
     position: absolute;
     font-weight: bold;
-    margin-left: 30px;
+    margin-left: 20px;
     padding-left : 5px;
-    
 }
 
 .ensemble-activites
@@ -382,17 +318,7 @@ aside
     margin : 20px 20px 20px 20px;
 }
 
-.vieux-port
-{
-   background-image : url("images/activites/vieux-port.jpg"); 
-}
-
-.parc-national
-{
-    background-image : url("images/activites/parc-national.jpg");
-}
-
-.vieux-port, .parc-national
+.fiche-activite-unbloc
 {
     background-size: cover;
     background-repeat: no-repeat;
@@ -400,18 +326,28 @@ aside
     border-radius: 10px 10px 0px 0px; 
     box-shadow: 2px 2px 2px gray;
     position : relative;
-    width: 235px;
+    width: 195px;
     height: 250px;
     margin : 20px 5px 20px 5px;
     padding: 50px 20px 20px 20px;
 }
 
-.texte-acti-port-parc
+.radius-unbloc
+{
+    border-radius: 10px 10px 0px 0px;
+    width : 240px;
+    height : 300px;
+    position : relative;
+    right: 25px;
+    bottom : 50px;
+}
+
+.texte-unbloc
 {
     position : absolute;
-    background: white;
+    background:white;
     border-radius: 0px 0px 10px 10px;
-    padding : 10px 50px 10px 10px;
+    padding : 10px 10px 10px 10px;
     width: 220px;
     height: 20px;
     top : 285px;
@@ -426,63 +362,43 @@ aside
     flex-direction: column;
 }
 
-.fort
-{
-    background-image : url("images/activites/fort.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 25% 50%;
-}
-
-.iles
-{
-    background-image : url("images/activites/iles.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.notre-dame
-{
-    background-image : url("images/activites/notre-dame.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.parc
-{
-    background-image : url("images/activites/parc.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 25% 60%;
-}
-
-.fort, .iles, .notre-dame, .parc
+.fiche-activite-deuxblocs
 {
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 25% 75%;
     border-radius: 10px 10px 0px 0px; 
     box-shadow: 2px 2px 2px gray;
     position : relative;
-    width: 235px;
+    width: 185px;
     height: 75px;
     margin : 20px 5px 20px 5px;
     padding: 50px 20px 20px 20px;
 }
 
-.texte-acti
+.radius-deuxblocs
+{
+    border-radius: 10px 10px 0px 0px;
+    width : 230px;
+    height : 150px;
+    position : relative;
+    right: 25px;
+    bottom : 50px;
+}
+
+.texte-deuxblocs
 {
     position : absolute;
     background: white;
     border-radius: 0px 0px 10px 10px;
-    padding : 10px 50px 10px 10px;
-    width: 220px;
+    padding : 10px 10px 10px 10px;
+    width: 210px;
     height: 20px;
     top : 100px;
     left : -5px;
     box-shadow: 2px 2px 2px gray;
     font-weight: bold;
 }
-
 
 /*Footer*/
 
@@ -492,11 +408,12 @@ aside
     justify-content: flex-start;
     flex-wrap: wrap;
     background-color: #F2F2F2;
+    margin-top: 30px;
 }
 
 footer dl
 {
-    padding-right: 200px;
+    padding-right: 190px;
 }
 
 footer dt
@@ -662,7 +579,7 @@ ul
         margin: 10px;
     }
 
-    .vieux-port, .parc-national
+    .fiche-activite-unbloc
     {
     background-size: cover;
     background-repeat: no-repeat;
@@ -670,19 +587,30 @@ ul
     border-radius: 10px 10px 0px 0px; 
     box-shadow: 2px 2px 2px gray;
     position : relative;
-    width: 200px;
+    width: 230px;
     height: 75px;
     margin : 20px 5px 20px 5px;
     padding: 50px 20px 20px 20px;
     }
 
-    .texte-acti-port-parc
+    .radius-unbloc
+    {
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 2px gray;
+    width : 280px;
+    height : 150px;
+    position : relative;
+    right: 25px;
+    bottom : 50px;
+    }
+
+    .texte-unbloc
     {
     position : absolute;
     background: white;
     border-radius: 0px 0px 10px 10px;
     padding : 10px 50px 10px 10px;
-    width: 185px;
+    width: 220px;
     height: 20px;
     top : 100px;
     left : -5px;
