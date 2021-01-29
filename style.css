@@ -83,6 +83,7 @@ nav a:hover
     padding : 10px 10px 10px 10px;
     font-weight: bold;
     color : black;
+    
 }
 #texte_recherche
 {
@@ -91,6 +92,7 @@ nav a:hover
     border-radius: 0px 10px 10px 0px;
     padding: 10px 10px 10px 10px;
     color: #F2F2F2;
+    cursor: pointer;
 }
 
 .responsive
@@ -135,6 +137,7 @@ nav a:hover
 .border_filtre:hover
 {
     background: #F2F2F2;
+    cursor: pointer;
 }
 
 /*info*/
@@ -534,58 +537,59 @@ dt
 
     /* menu navigation*/
 
-    /*
-    #logo
-    {
-        width: 100px;
-        height: auto;
-    }
-
     .bandeau_sup
     {
         display: flex;
-        align-items: baseline;
-        flex-wrap: wrap;
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    ul 
+    #logo
     {
-        display: flex;
-        list-style-type: none;
-        flex-wrap: wrap-reverse;
-        padding-left: 10px;
+        margin-left: 20px;
+        margin-right: 10px;
+        position: absolute;
     }
-    
-    li 
+
+     nav ul 
+    {
+        padding-left: 10px;
+        position: relative;
+        top : 20px;
+        left: 10px;
+
+    }
+
+    #inscription
+    {
+        order : -2;
+        color:#0065FC ;
+        font-weight: bold;  
+    }
+
+   
+    nav li 
     {
         padding-right: 50px;
+        line-height: 2em;
     }
 
     a
     {
         text-decoration: none;
         color: black;
-       
-
     }
-    #hebergement:hover
+
+    
+    
+    /*
     {
         color: #0065FC; 
         border-top: 3px solid #0065FC;
         padding-bottom: 10px;
-        
     }
-
-    #inscription
-    {
-        color:#0065FC ;
-        font-weight: bold;  
-
-    }
-
 */
+
     /* barre recherche */
     .responsive 
     {
@@ -602,6 +606,7 @@ dt
        border : solid #0065FC;
        height: 38px;
        border-radius: 0px 10px 10px 0px;
+       cursor: pointer;
     }
     .white
     {
@@ -616,9 +621,9 @@ dt
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-       justify-content: center;
-       align-items: baseline;
-       font-weight: bold; 
+        justify-content: center;
+        align-items: baseline;
+        font-weight: bold; 
     }
 
     .filtres-responsive
