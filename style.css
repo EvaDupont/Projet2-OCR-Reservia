@@ -98,7 +98,7 @@ nav a:hover
     display: none;
 }
 
-/* Filtres et info*/
+/* Filtres */ 
 .light-grey
 {
     color: #F2F2F2;
@@ -112,7 +112,7 @@ nav a:hover
     color: #DEEBFF
 }
 
-.filtres-row
+.filtres-responsive
 {
     display: flex;
 }
@@ -129,13 +129,15 @@ nav a:hover
 {
     border: #F2F2F2 solid 2px; 
     border-radius: 20px;
-    padding-right: 10px;
-    margin-left: 50px;
+    padding-right: 20px;
+    margin-left: 30px;
 }
 .border_filtre:hover
 {
     background: #F2F2F2;
 }
+
+/*info*/
 
 .info
 {
@@ -200,21 +202,18 @@ nav a:hover
     width: 175px;
     height: 75px;
     margin : 30px 10px 50px 10px;
-    padding: 50px 20px 20px 20px;
-      
+    padding: 50px 20px 20px 20px;    
 }
 
 .radius
 {
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 5px 5px 5px 5px;
     width : 215px;
     height : 115px;
     position : relative;
     right: 20px;
     bottom : 50px;
 }
-
-
 
 .texte-hotel
 {   
@@ -229,8 +228,6 @@ nav a:hover
     top : 100px;
     left : -5px;
     line-height: 1.3em;
-    
-    
 }
 
 /*Section Populaire*/
@@ -266,7 +263,7 @@ aside
     box-shadow: 2px 2px 2px gray;
     border: solid 5px white;
     position : relative;
-    width: 200px;
+    width: 55px;
     height: 90px;
     margin : 30px 10px 10px 10px;
     padding: 20px 50px 20px 20px;
@@ -289,8 +286,8 @@ aside
 
 .radius-populaire
 {
-    border-radius: 10px 0px 0px 10px;
-    width : 130px;
+    border-radius: 5px 0px 0px 5px;
+    width : 125px;
     height : 130px;
     position : relative;
     right: 20px;
@@ -519,83 +516,53 @@ dt
         width : auto
     }
 
+    h1
+    {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    p, ul, dd, dt
+    {
+        font-size: 0.9em;
+    }
+
     header, .titre-site, .chapeau-titre
     {
+        width: auto;
+    }
+
+    /* menu navigation*/
+
+    /*
+    #logo
+    {
+        width: 100px;
+        height: auto;
+    }
+
+    .bandeau_sup
+    {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    .responsive 
-    {
-        display: contents;
-    
-    }
-    .desktop
-    {
-        display: none;
-    }
-    button
-    {
-       background: #0065FC; 
-       border : solid #0065FC;
-       height: 38px;
-       border-radius: 0px 10px 10px 0px;
-    }
-    .white
-    {
-        color: white;
-    }
-     
-    .filtres
-    {
-        width: auto;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-       justify-content: center;
-       align-items: baseline;
-       font-weight: bold; 
-    }
-
-    .filtres-row
-    {
-        display: flex;
-    }
-    .border_filtre
-    {
-        border: #F2F2F2 solid 2px; 
-        border-radius: 20px;
-        padding-right: 10px;
-        margin : 0px 10px 10px 10px;
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-ul 
+    ul 
     {
         display: flex;
         list-style-type: none;
-        justify-content: space-between;
         flex-wrap: wrap-reverse;
-        justify-content: flex-end;
-        padding-left: 130px;
-    
+        padding-left: 10px;
     }
-    nav li
-    {
-        margin-right: 50px; 
-    } 
     
+    li 
+    {
+        padding-right: 50px;
+    }
+
     a
     {
         text-decoration: none;
@@ -618,44 +585,143 @@ ul
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
+*/
+    /* barre recherche */
+    .responsive 
+    {
+        display: contents;
     
+    }
+    .desktop
+    {
+        display: none;
+    }
+    button
+    {
+       background: #0065FC; 
+       border : solid #0065FC;
+       height: 38px;
+       border-radius: 0px 10px 10px 0px;
+    }
+    .white
+    {
+        color: white;
+    }
+     
+    /* Filtres*/
 
+    .filtres
+    {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       justify-content: center;
+       align-items: baseline;
+       font-weight: bold; 
+    }
 
-    section
+    .filtres-responsive
+    {
+        display: flex;
+    }
+    .border_filtre
+    {
+        border: #F2F2F2 solid 2px; 
+        border-radius: 20px;
+        padding-right: 10px;
+        margin : 0px 10px 10px 10px;
+    }
+
+    /* les + populaire */
+
+    .section
     {
         display: flex;
         flex-wrap: wrap; 
         margin: 10px; 
     }
 
-    article
+    aside
+    {
+        order :1;
+        margin: 10px;
+    }
+
+    .descript-hotel
+    {
+    position : absolute;
+    background: white;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 2px 2px 2px gray;
+    border: solid 5px white;
+    padding : 10px;
+    width: 140px;
+    height: 110px;
+    left : 120px;
+    top : -20px;
+    line-height: 1.3em; 
+    }
+
+    /* Hebergement  */
+
+    .article
     {
         order : 2;
         align-items: center;
         margin: 10px;
-
     }
 
-    aside
+    .ensemble-fiches
     {
-        order :1;
-        align-items: center;
-        margin: 10px;
+        justify-content: space-around;
+    }
+    
+    .fiche-hotel
+    {
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 2px 2px 2px grey; 
+        border: solid 5px white;
+        position : relative;
+        width: 250px;
+        height: 75px;
+        margin : 30px 10px 50px 10px;
+        padding: 50px 20px 20px 20px;
+    }
+    
+    .radius
+    {
+        border-radius: 5px 5px 5px 5px;
+        width : 290px;
+        height : 150px;
+        position : relative;
+        right: 20px;
+        bottom : 50px;
+    }
+    
+    .texte-hotel
+    {   
+        position : absolute;
+        background: white;
+        border-radius: 0px 0px 10px 10px;
+        border: solid 5px white;
+        box-shadow: 2px 2px 2px gray;
+        width: 280px;
+        height: 60px;
+        padding : 5px;
+        top : 100px;
+        left : -5px;
+        line-height: 1.3em;
     }
 
-    .fiche-activite-unbloc
+    /*Activites*/
+
+    .ensemble-activites
+    {
+        justify-content: space-around;
+    }
+
+    .fiche-activite-unbloc, .fiche-activite-deuxblocs, .fiche-activite-deuxblocs-fort, .fiche-activite-deuxblocs-iles
     {
     background-size: cover;
     background-repeat: no-repeat;
@@ -663,45 +729,36 @@ ul
     border-radius: 10px 10px 0px 0px; 
     box-shadow: 2px 2px 2px gray;
     position : relative;
-    width: 230px;
-    height: 75px;
-    margin : 20px 5px 20px 5px;
+    width: 250px;
+    height: 110px;
+    margin : 20px 5px 50px 5px;
     padding: 50px 20px 20px 20px;
     }
 
-    .radius-unbloc
+    .radius-unbloc, .radius-deuxblocs, .radius-deuxblocs-fort, .radius-deuxblocs-iles
     {
     border-radius: 10px 10px 0px 0px;
     box-shadow: 2px 2px 2px gray;
-    width : 280px;
-    height : 150px;
+    width : 300px;
+    height : 190px;
     position : relative;
     right: 25px;
     bottom : 50px;
     }
 
-    .texte-unbloc
+    .texte-unbloc, .texte-deuxblocs, .texte-deuxblocs-fort, .texte-deuxblocs-iles
     {
     position : absolute;
     background: white;
     border-radius: 0px 0px 10px 10px;
     padding : 10px 50px 10px 10px;
-    width: 220px;
+    width: 240px;
     height: 20px;
-    top : 100px;
+    top : 170px;
     left : -5px;
     box-shadow: 2px 2px 2px gray;
-    font-weight: bold;
+    font-weight: bold; 
     }
     
-    .ensemble-fiches
-    {
-        justify-content: space-around;
-    }
-
-    .ensemble-activites
-    {
-        justify-content: space-around;
-    }
-
+    
 }
