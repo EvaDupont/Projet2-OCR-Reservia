@@ -241,6 +241,7 @@ aside
     border-radius: 10px 10px 10px 10px;
     margin : 0px 20px 0px 10px;
     flex : 1;
+    width: 100%;
 }
 .titre-aside
 {
@@ -252,12 +253,12 @@ aside
 
 .ensemble-plus-populaire
 {
-   display: flex;
-   flex-direction: column; 
+   display: block;
    flex-wrap: wrap;
    margin-left: 20px;
    margin-right: 20px;
    margin-bottom: 10px;
+   box-sizing: border-box;
 }
 
 .fiche-populaire
@@ -512,7 +513,14 @@ dt
 
 /* --------------------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width:1024px)
+ /* @media all and (min-width: 1024px) and (max-width: 1280px)
+ Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+
+
+/* @media all and (min width : 768px) and (max-width : 1024px)*/
+
+
+@media screen and (max-width: 1024px) /*Sur les écrans, quand la largeur de la fenêtre fait au maximum 1024px */
 {
     body
     {
@@ -535,6 +543,10 @@ dt
         width: auto;
     }
 
+    header
+    {
+        box-sizing: border-box;
+    }
     /* menu navigation*/
 
     .bandeau_sup
@@ -542,6 +554,7 @@ dt
         display: flex;
         margin-left: 10px;
         margin-right: 10px;
+        border-bottom: solid 3px #F2F2F2;
     }
 
     #logo
@@ -555,41 +568,36 @@ dt
     {
         padding-left: 10px;
         position: relative;
-        top : 20px;
         left: 10px;
-
+        justify-content: flex-end;
     }
 
     #inscription
     {
         order : -2;
         color:#0065FC ;
-        font-weight: bold;  
+        font-weight: bold;
+        padding-left: 250px; 
+        border : hidden;
     }
 
-   
     nav li 
     {
-        padding-right: 50px;
+        padding-right: 100px;
         line-height: 2em;
     }
 
-    a
+    nav a:hover
     {
         text-decoration: none;
         color: black;
+        color: #0065FC ;
+        border-bottom: 3px solid  #0065FC;
+        padding-bottom: 20px;
+        border-top: hidden;
     }
 
     
-    
-    /*
-    {
-        color: #0065FC; 
-        border-top: 3px solid #0065FC;
-        padding-bottom: 10px;
-    }
-*/
-
     /* barre recherche */
     .responsive 
     {
@@ -666,6 +674,7 @@ dt
     left : 120px;
     top : -20px;
     line-height: 1.3em; 
+
     }
 
     /* Hebergement  */
@@ -764,6 +773,11 @@ dt
     box-shadow: 2px 2px 2px gray;
     font-weight: bold; 
     }
-    
+   
+   
+
+
+
+
     
 }
