@@ -512,19 +512,13 @@ dt
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
-
- /* @media all and (min-width: 1024px) and (max-width: 1280px)
- Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-
-
-/* @media all and (min width : 768px) and (max-width : 1024px)*/
-
+                            /* VERSION MOBILE IPHONE 8 */
 
 @media screen and (max-width: 1024px) /*Sur les écrans, quand la largeur de la fenêtre fait au maximum 1024px */
 {
     body
     {
-        width : auto
+        width : 100%;
     }
 
     h1
@@ -540,7 +534,7 @@ dt
 
     header, .titre-site, .chapeau-titre
     {
-        width: auto;
+        width: 100%;
     }
 
     header
@@ -587,17 +581,17 @@ dt
         line-height: 2em;
     }
 
+    
     nav a:hover
     {
         text-decoration: none;
         color: black;
         color: #0065FC ;
         border-bottom: 3px solid  #0065FC;
-        padding-bottom: 20px;
+        padding-bottom: 20px ;
         border-top: hidden;
     }
 
-    
     /* barre recherche */
     .responsive 
     {
@@ -657,24 +651,25 @@ dt
 
     aside
     {
+        width: 100%;
         order :1;
         margin: 10px;
     }
 
     .descript-hotel
     {
-    position : absolute;
-    background: white;
-    border-radius: 0px 10px 10px 0px;
-    box-shadow: 2px 2px 2px gray;
-    border: solid 5px white;
-    padding : 10px;
-    width: 140px;
-    height: 110px;
-    left : 120px;
-    top : -20px;
-    line-height: 1.3em; 
-
+        position : absolute;
+        box-sizing: border-box;
+        background: white;
+        border-radius: 0px 10px 10px 0px;
+        box-shadow: 2px 2px 2px gray;
+        border: solid 5px white;
+        padding : 10px;
+        width: 160px;
+        height: 141px;
+        left : 120px;
+        top : -20px;
+        line-height: 1.3em; 
     }
 
     /* Hebergement  */
@@ -732,18 +727,17 @@ dt
 
     .ensemble-activites
     {
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .fiche-activite-unbloc, .fiche-activite-deuxblocs, .fiche-activite-deuxblocs-fort, .fiche-activite-deuxblocs-iles
     {
-    background-size: cover;
+    background-size: center;
     background-repeat: no-repeat;
     background-position: 25% 75%;
     border-radius: 10px 10px 0px 0px; 
     box-shadow: 2px 2px 2px gray;
     position : relative;
-    width: 250px;
     height: 110px;
     margin : 20px 5px 50px 5px;
     padding: 50px 20px 20px 20px;
@@ -753,8 +747,8 @@ dt
     {
     border-radius: 10px 10px 0px 0px;
     box-shadow: 2px 2px 2px gray;
-    width : 300px;
     height : 190px;
+    width: 250px;
     position : relative;
     right: 25px;
     bottom : 50px;
@@ -765,19 +759,55 @@ dt
     position : absolute;
     background: white;
     border-radius: 0px 0px 10px 10px;
-    padding : 10px 50px 10px 10px;
-    width: 240px;
+    padding : 10px 10px 10px 10px;
+    width: 230px;
     height: 20px;
     top : 170px;
     left : -5px;
     box-shadow: 2px 2px 2px gray;
     font-weight: bold; 
     }
-   
-   
+  
+}
+
+                                /* VERSION TABLETTE */
+
+/* @media all and (min width : 768px) and (max-width : 1024px)*/
 
 
 
+                            /* VERSION PLUS PETIT MOBILE 
+@media screen and (max-width :768px)
+{
 
-    
+    body 
+    {
+        margin: 5px;
+    }
+
+    .titre-site 
+    {
+        max-width: 768px ;
+    }
+
+    aside 
+    {
+        width: 100%;
+    }
+    .descript-hotel
+    {
+        position : absolute;
+        box-sizing: border-box;
+        background: white;
+        border-radius: 0px 10px 10px 0px;
+        box-shadow: 2px 2px 2px gray;
+        border: solid 5px white;
+        padding : 10px;
+        width: 140px;
+        height: 141px;
+        left : 120px;
+        top : -20px;
+        line-height: 1em; 
+    }*/
+
 }
