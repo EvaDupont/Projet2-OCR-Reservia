@@ -204,7 +204,7 @@ nav a:hover
     position : relative;
     width: 175px;
     height: 75px;
-    margin : 30px 10px 50px 10px;
+    margin : 15px 10px 40px 10px;
     padding: 50px 20px 20px 20px;    
 }
 
@@ -251,17 +251,17 @@ aside
     font-weight : bold;
 }
 
-.ensemble-plus-populaire
+.ensemble-plus-populaire /* bloc des 3 fiches hotels */
 {
    display: block;
    flex-wrap: wrap;
    margin-left: 20px;
    margin-right: 20px;
    margin-bottom: 10px;
-   box-sizing: border-box;
+   
 }
 
-.fiche-populaire
+.fiche-populaire /* Bloc de chaque hotel */
 {
     border-radius: 10px 0px 0px 10px; 
     box-shadow: 2px 2px 2px gray;
@@ -269,11 +269,11 @@ aside
     position : relative;
     width: 55px;
     height: 90px;
-    margin : 30px 10px 10px 10px;
+    margin : 15px 10px 20px 15px;
     padding: 20px 50px 20px 20px;
 }
 
-.descript-hotel
+.descript-hotel /* texte hotel */
 {
     position : absolute;
     background: white;
@@ -288,7 +288,7 @@ aside
     line-height: 1.3em; 
 }
 
-.radius-populaire
+.radius-populaire /* photo hotel */
 {
     border-radius: 5px 0px 0px 5px;
     width : 125px;
@@ -654,6 +654,17 @@ dt
         width: 100%;
         order :1;
         margin: 10px;
+    }
+
+    .ensemble-plus-populaire
+    {
+       display: block;
+       flex-wrap: wrap;
+       margin-left: 20px;
+       margin-right: 20px;
+       margin-bottom: 10px;
+       box-sizing: border-box; 
+       align-items: center;
     }
 
     .descript-hotel
