@@ -1,5 +1,5 @@
 
-/* GENERAL */
+/* VERSION BUREAU */
 *
 {
     font-family: "Raleway", sans-serif;
@@ -20,7 +20,6 @@ p, ul, dd, dt
 {
     margin-left: 30px;
 }
-
 
 /* logo - menu navigation*/
 #logo
@@ -63,7 +62,7 @@ nav a:hover
     font-weight: bold;
 }
 
-/* Formulaire Recherche de ville*/
+/* Barre de recherche de ville*/
 
 .form_recherche
 {
@@ -206,7 +205,7 @@ nav a:hover
     padding: 50px 20px 20px 20px;    
 }
 
-.radius
+.image
 {
     border-radius: 10px 10px 0px 0px; 
     box-shadow: 2px 2px 2px grey; 
@@ -253,12 +252,12 @@ aside
 
 .ensemble-plus-populaire /* bloc des 3 fiches hotels */
 {
-   display: block;
+   display: flex;
+   flex-direction: column;
    flex-wrap: wrap;
    margin-left: 20px;
    margin-right: 20px;
-   margin-bottom: 10px;
-   
+   margin-bottom: 10px; 
 }
 
 .fiche-populaire /* Bloc de chaque hotel */
@@ -271,7 +270,7 @@ aside
     padding: 20px 50px 20px 20px;
 }
 
-.radius-populaire /* photo hotel */
+.image-populaire /* photo hotel */
 {
     border-radius: 10px 0px 0px 10px;
     box-shadow: 2px 2px 2px gray;
@@ -283,6 +282,7 @@ aside
     bottom : 20px;
     background-size: cover;
 }
+
 .descript-hotel /* texte hotel */
 {
     position : absolute;
@@ -361,7 +361,7 @@ aside
     padding: 50px 20px 20px 20px;
 }
 
-.radius-unbloc
+.image-unbloc
 {
     border-radius: 10px 10px 0px 0px;
     box-shadow: 2px 2px 2px gray;
@@ -371,7 +371,7 @@ aside
     right: 25px;
     bottom : 50px;
 }
-.radius-deuxblocs-fort
+.image-deuxblocs-fort
 {
     border-radius: 10px 10px 0px 0px;
     box-shadow: 2px 2px 2px gray;
@@ -381,7 +381,7 @@ aside
     right: 25px;
     bottom : 50px;
 }
-.radius-deuxblocs-iles
+.image-deuxblocs-iles
 {
     border-radius: 10px 10px 0px 0px; 
     box-shadow: 2px 2px 2px gray;
@@ -391,7 +391,7 @@ aside
     right: 25px;
     bottom : 50px; 
 }
-.radius-deuxblocs
+.image-deuxblocs
 {
     border-radius: 10px 10px 0px 0px;
     box-shadow: 2px 2px 2px gray;
@@ -493,7 +493,23 @@ dt
 
                             /* VERSION MOBILE IPHONE 8 */
 
-@media screen and (max-width: 768px) /*Sur les écrans, quand la largeur de la fenêtre fait au maximum 768px */
+@media screen (max-width: 1177px)
+{
+    .fiche-hotel
+    {
+    width : 250px;
+    }
+    
+.bloc-texte
+
+    {
+
+    }
+
+}
+
+
+@media screen (max-width: 768px) /*Sur les écrans, quand la largeur de la fenêtre fait au maximum 768px */
 {
     body
     {
