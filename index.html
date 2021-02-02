@@ -6,12 +6,13 @@
         <script src="https://kit.fontawesome.com/cf88953d74.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/d461de9a6d.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RESERVIA : Trouvez votre hébergement pour des vacances de rêve</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- balise pour controler la mise en page mobile -->
+        <meta description=" RESERVIA une agence de voyage pour des hébergements de rêve"> <!-- balise pour l'indexation dans les moteurs de recherche -->
+        <title>RESERVIA </title>
     </head>
 
     <body>
-        <header> 
+        <header> <!-- en tête : logo + menu de navigation -->
             <div class="bandeau_sup">
                 <img id="logo" src="images/logo/Reservia@3x.png" alt="Logo">  
                     <nav>
@@ -22,7 +23,9 @@
                         </ul>
                     </nav>
             </div>
+        </header>
 
+        <main> <!-- bloc majeur du site : presentation + barre de recherche + filtres + point d'info -->
             <h1 class="titre-site"> Trouvez votre hébergement pour des vacances de rêves </h1> 
                 <p class="chapeau-titre">En plein centre ville ou en pleine nature</p>
         
@@ -75,20 +78,21 @@
                     <i class="far fa-circle fa-stack-2x light-grey"></i>
                     <i class="fas fa-info fa-stack-1x blue"></i></span>
                 Plus de 500 logements sont disponibles dans cette ville </p>
-            </div>         
-        </header>
+            </div>   
 
-     <!-- BLOC HEBERGEMENT -->  
+        </main>
 
-        <div class="section">  
-            <div class="article">
+        <div class="section">   <!-- HEBERGEMENT -->  
+
+            <div class="article"> <!-- Bloc pour hébergements -->
+
                 <div id="hebergement">Hébergement à Marseille</div>
-                    <div class="ensemble-fiches">
 
-                        <div>
+                    <div class="ensemble-fiches"> <!-- pour flex box : ensemble des 6 fiches d'hébergements-->
+
                             <a href="#">
-                                <div class="fiche-hotel">
-                                    <img class="radius" src="images/hebergements/cannebiere.jpg" alt="img-hotel-cannebiere">
+                                <div class="fiche-hotel"> <!-- fiche de l'hotel : image + texte -->
+                                    <img class="image" src="images/hebergements/cannebiere.jpg" alt="img-hotel-cannebiere">
                                     <p class="texte-hotel">   
                                         <b>Auberge de la Cannebière</b><br>
                                         Nuit à partir de <b>25€</b><br>
@@ -102,13 +106,10 @@
                                     </p>
                                 </div>
                             </a>
-                        </div>
                            
-
-                        <div>
                             <a href="#">
-                                <div class="fiche-hotel">
-                                    <img class="radius" src="images/hebergements/port.jpg" alt="img-hotel-port">
+                                <div class="fiche-hotel"><!-- fiche de l'hotel : image + texte -->
+                                    <img class="image" src="images/hebergements/port.jpg" alt="img-hotel-port">
                                     <p class="texte-hotel">   
                                         <b>Hôtel du port</b><br>
                                         Nuit à partir de <b>52€</b><br>
@@ -122,12 +123,10 @@
                                      </p>
                                 </div>
                             </a>
-                        </div>    
-                       
-                        <div>
-                            <a href="#">
-                                <div class="fiche-hotel">
-                                    <img class="radius" src="images/hebergements/mouette.jpg" alt="img-hotel-mouette">
+
+                           <a href="#">
+                                <div class="fiche-hotel"><!-- fiche de l'hotel : image + texte -->
+                                    <img class="image" src="images/hebergements/mouette.jpg" alt="img-hotel-mouette">
                                     <p class="texte-hotel">   
                                         <b>Hôtel Les mouettes</b><br>
                                         Nuit à partir de <b>76€</b><br>
@@ -141,12 +140,10 @@
                                     </p>
                                 </div>
                             </a>    
-                        </div>
-
-                        <div>
+                      
                             <a href="#">
-                                <div class="fiche-hotel">
-                                    <img class="radius" src="images/hebergements/mer(1).jpg" alt="img-hotel-mer">
+                                <div class="fiche-hotel"><!-- fiche de l'hotel : image + texte -->
+                                    <img class="image" src="images/hebergements/mer(1).jpg" alt="img-hotel-mer">
                                     <p class="texte-hotel">   
                                         <b>Hôtel de la mer</b><br>
                                         Nuit à partir de <b>46€</b><br>
@@ -160,12 +157,10 @@
                                     </p>
                                 </div>
                             </a>
-                        </div>    
-                        
-                        <div>
+  
                             <a href="#">
-                                <div class="fiche-hotel">
-                                    <img class="radius" src="images/hebergements/panier.jpg" alt="img-hotel-panier">
+                                <div class="fiche-hotel"><!-- fiche de l'hotel : image + texte -->
+                                    <img class="image" src="images/hebergements/panier.jpg" alt="img-hotel-panier">
                                     <p class="texte-hotel">   
                                         <b>Auberge Le Panier</b><br>
                                         Nuit à partir de <b>23€</b><br>
@@ -179,12 +174,10 @@
                                     </p>
                                 </div>
                             </a>
-                        </div>    
-                        
-                        <div>
+                                       
                             <a href="#">
-                                <div class="fiche-hotel">
-                                    <img class="radius" src="images/hebergements/amina(1).jpg" alt="img-hotel-amina">
+                                <div class="fiche-hotel"><!-- fiche de l'hotel : image + texte -->
+                                    <img class="image" src="images/hebergements/amina(1).jpg" alt="img-hotel-amina">
                                     <p class="texte-hotel">   
                                         <b>Hôtel chez Amina</b><br>
                                         Nuit à partir de <b>96€</b><br>
@@ -198,29 +191,29 @@
                                     </p>
                                 </div>
                             </a>
-                        </div>
-                    </div>
+                        
+                    </div> <!-- balise de fin pour flex box : ensemble des 6 fiches-->
+                    <div id="afficher-plus"><a href="#"> Afficher plus </a></div>   
 
-                    <div id="afficher-plus"><a href="#"> Afficher plus </a></div>        
-                </div>
-    
-    <!-- BLOC LES PLUS POPULAIRES-->         
+            </div><!-- balise de fin article-->
+             
 
-            <aside>
+            <aside><!-- Bloc pour les plus populaires-->  
+
                 <div class="titre-aside">
                     <div id="titre-populaire"> Les plus populaires</div>
                     <div><i class="fas fa-chart-line"></i></div>
                 </div>
 
-                <div class="ensemble-plus-populaire">
-
-                    <div>
+                <div class="ensemble-plus-populaire"><!-- pour flex box : ensemble des 3 fiches les + populaires-->
                         <a href="#">
-                            <div class="fiche-populaire">
-                                <img class="radius-populaire" src="images/hebergements/soleil-matin(1).jpg" alt="img-hotel-soleilmatin">
-                                <p class="descript-hotel">   
-                                <b>Hôtel Le soleil du matin</b><br>
-                                Nuit à partir de <b>128€</b><br><br>
+                            <div class="fiche-populaire"><!-- fiche de l'hotel : image + texte -->
+                                <img class="image-populaire" src="images/hebergements/soleil-matin(1).jpg" alt="img-hotel-soleilmatin">
+                                
+                                <div class="bloc-texte">
+                                    <p class="descript-hotel">   
+                                    <b>Hôtel Le soleil du matin</b><br>
+                                    Nuit à partir de <b>128€</b><br><br>
                                     <span class="fa-sm">
                                         <i class="fas fa-star blue"></i>
                                         <i class="fas fa-star blue"></i>
@@ -228,17 +221,18 @@
                                         <i class="fas fa-star blue"></i>
                                         <i class="fas fa-star blue"></i>
                                     </span>
-                                </p>
+                                    </p>
+                                </div>
+
                             </div>
                         </a>
-                    </div> 
-
-
-                    <div>
+                     
                         <a href="#">
                             <div class="fiche-populaire">
-                                <img class="radius-populaire" src="images/hebergements/chambre-hote.jpg" alt="img-chambrehote">
-                                <p class="descript-hotel">   
+                                <img class="image-populaire" src="images/hebergements/chambre-hote.jpg" alt="img-chambrehote">
+                                
+                                <div class="bloc-texte">
+                                    <p class="descript-hotel">   
                                     <b>Au coeur de l'eau Chambres d'hôtes</b><br>
                                     Nuit à partir de <b>71€</b><br><br>
                                     <span class="fa-sm">
@@ -248,16 +242,17 @@
                                         <i class="fas fa-star blue"></i>
                                         <i class="fas fa-star light-grey"></i>
                                     </span>
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </a>
-                    </div> 
-
-                    <div>
+                     
                         <a href="#">
                             <div class="fiche-populaire">
-                                <img class="radius-populaire" src="images/hebergements/blc-bleu(1).jpg" alt="img-hotel-blcbleu">
-                                <p class="descript-hotel">   
+                                <img class="image-populaire" src="images/hebergements/blc-bleu(1).jpg" alt="img-hotel-blcbleu">
+                                
+                                <div class="bloc-texte">
+                                    <p class="descript-hotel">   
                                     <b>Hôtel Tout bleu et blanc</b><br>
                                     Nuit à partir de <b>68€</b><br><br>
                                     <span class="fa-sm">
@@ -267,87 +262,82 @@
                                         <i class="fas fa-star blue"></i>
                                         <i class="fas fa-star light-grey"></i>
                                     </span>
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </a> 
-                    </div>
 
-                </div>       
+                </div>  <!-- balise de fin pour flex box -->     
             </aside>       
-        </div>
+        </div> <!-- balise de fin de section : hebergement + les plus populaires -->
           
-    <!-- BLOC ACTIVITES -->
-        <div class="section">  
+    
+        <div class="section">  <!-- Bloc pour les activités -->
                 <div id="titre-activites"> Activités à Marseille</div>
-                    <div class="ensemble-activites">
+                    
+                    <div class="ensemble-activites"><!-- pour flex box : ensemble des fiches d'activités-->
 
-                        <div>
                             <a href="#">
                                 <div class="fiche-activite-unbloc">
-                                    <img class="radius-unbloc" src="images/activites/vieux-port(1).jpg" alt="img-vieuxport">
+                                    <img class="image-unbloc" src="images/activites/vieux-port(1).jpg" alt="img-vieuxport">
                                     <p class="texte-unbloc"> Vieux Port </p>
                                 </div>    
                             </a>
-                        </div>
 
-                        <div class="deux-blocs">       
+                        <div class="deux-blocs"> <!-- concerne les activités : fort et iles-->      
+                            
                             <div class="fort">
                                 <a href="#">
                                     <div class="fiche-activite-deuxblocs-fort">
-                                        <img class="radius-deuxblocs-fort" src="images/activites/fort(1).jpg" alt="img-fort">
+                                        <img class="image-deuxblocs-fort" src="images/activites/fort(1).jpg" alt="img-fort">
                                         <p class="texte-deuxblocs-fort"> Fort de Pomègues</p>
                                     </div>
                                 </a>
                             </div>
 
-                            <div>
                                 <a href="#">
                                      <div class="fiche-activite-deuxblocs-iles">
-                                        <img class="radius-deuxblocs-iles" src="images/activites/iles(1).jpg" alt="img-iles">
+                                        <img class="image-deuxblocs-iles" src="images/activites/iles(1).jpg" alt="img-iles">
                                         <p class="texte-deuxblocs-iles"> Iles du Frioul </p>
                                     </div>    
-                                </a>
-                            </div>                               
-                        </div>
-
-                        <div>
+                                </a>                                         
+                        </div> <!-- balise de fin pour les activités fort et iles-->
+                     
                             <a href="#">
                                 <div class="fiche-activite-unbloc">
-                                    <img class="radius-unbloc" src="images/activites/parc-national(1).jpg" alt="img-parcnat">
+                                    <img class="image-unbloc" src="images/activites/parc-national(1).jpg" alt="img-parcnat">
                                     <p class="texte-unbloc"> Parc National des Calanques </p>
                                 </div>    
                             </a>
-                        </div>
+                        
 
-                        <div class="deux-blocs">
-                            
-                            <div>
+                        <div class="deux-blocs"><!-- balise pour les activités ND et parc -->
+                        
                                 <a href="#">
                                     <div class="fiche-activite-deuxblocs">
-                                        <img class="radius-deuxblocs" src="images/activites/notre-dame.jpg" alt="img-notredame">
+                                        <img class="image-deuxblocs" src="images/activites/notre-dame.jpg" alt="img-notredame">
                                         <p class="texte-deuxblocs"> Notre-Dame-de-la-Garde</p>
                                     </div>
                                 </a>
-                            </div>
-    
-                            <div>
+ 
                                 <a href="#">
                                     <div class="fiche-activite-deuxblocs">
-                                        <img class="radius-deuxblocs" src="images/activites/parc.jpg" alt="img-parc">
+                                        <img class="image-deuxblocs" src="images/activites/parc.jpg" alt="img-parc">
                                         <p class="texte-deuxblocs"> Parc Longchamp </p>
                                     </div>    
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-        </div>
+                            
+                        </div> <!-- balise de fin pour les activités nD et parc -->
+                    </div> <!-- balise de fin pour l'enseble des fiches activités -->
+        </div> <!-- balise de fin pour le bloc activités-->
 
-<!-- FOOTER -->
 
-        <footer> 
+
+        <footer> <!-- pied de page -->
+
             <div class="footer">
-                <dl>
-                    <dt> A Propos </dt>
+                <dl> <!-- balise permettant d'avoir une liste avec seulement le titre en gras -->
+                    <dt> A Propos </dt> <!-- titre en gras-->
                     <dd><a href="#">Fonctionnement du site</a></dd>
                     <dd><a href="#">Conditions générales de vente</a></dd>
                     <dd><a href="#">Données et confidentialité </a></dd>
