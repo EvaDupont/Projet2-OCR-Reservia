@@ -198,19 +198,19 @@ nav a:hover
 
 .fiche-hotel
 {
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: 2px 2px 2px grey; 
-    border: solid 5px white;
     position : relative;
+    border-radius: 10px 10px 0px 0px;
     width: 175px;
     height: 75px;
-    margin : 15px 10px 40px 10px;
+    margin : 15px 10px 70px 10px;
     padding: 50px 20px 20px 20px;    
 }
 
 .radius
 {
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 10px 10px 0px 0px; 
+    box-shadow: 2px 2px 2px grey; 
+    border: solid 5px white;
     width : 215px;
     height : 115px;
     position : relative;
@@ -229,7 +229,7 @@ nav a:hover
     height: 60px;
     padding : 5px;
     top : 100px;
-    left : -5px;
+    left : 0px;
     line-height: 1.3em;
 }
 
@@ -263,16 +263,26 @@ aside
 
 .fiche-populaire /* Bloc de chaque hotel */
 {
-    border-radius: 10px 0px 0px 10px; 
-    box-shadow: 2px 2px 2px gray;
-    border: solid 5px white;
     position : relative;
+    border-radius: 10px 0px 0px 10px; 
     width: 55px;
     height: 90px;
-    margin : 15px 10px 20px 15px;
+    margin : 15px 10px 45px 15px;
     padding: 20px 50px 20px 20px;
 }
 
+.radius-populaire /* photo hotel */
+{
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 2px 2px 2px gray;
+    border: solid 5px white;
+    width : 125px;
+    height : 130px;
+    position : relative;
+    right: 20px;
+    bottom : 20px;
+    background-size: cover;
+}
 .descript-hotel /* texte hotel */
 {
     position : absolute;
@@ -284,19 +294,8 @@ aside
     width: 155px;
     height: 110px;
     left : 130px;
-    top : -21px;
+    top : -16px;
     line-height: 1.3em; 
-}
-
-.radius-populaire /* photo hotel */
-{
-    border-radius: 5px 0px 0px 5px;
-    width : 125px;
-    height : 130px;
-    position : relative;
-    right: 20px;
-    bottom : 20px;
-    background-size: cover;
 }
 
 /* Activités */
@@ -319,16 +318,45 @@ aside
     margin : 20px 20px 20px 20px;
 }
 
+.deux-blocs
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .fiche-activite-unbloc
 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 25% 75%;
-    border-radius: 10px 10px 0px 0px; 
-    box-shadow: 2px 2px 2px gray;
     position : relative;
+    border-radius: 10px 10px 0px 0px; 
     width: 195px;
     height: 250px;
+    margin : 20px 5px 20px 5px;
+    padding: 50px 20px 20px 20px;
+}
+.fiche-activite-deuxblocs-fort
+{
+    position : relative;
+    border-radius: 10px 10px 0px 0px; 
+    width: 185px;
+    height: 110px;
+    margin : 20px 5px 20px 5px;
+    padding: 50px 20px 20px 20px;
+}
+.fiche-activite-deuxblocs-iles
+{  
+    position : relative;
+    border-radius: 10px 10px 0px 0px; 
+    width: 185px;
+    height: 40px;
+    margin : 20px 5px 20px 5px;
+    padding: 50px 20px 20px 20px;
+}
+.fiche-activite-deuxblocs
+{
+    position : relative;
+    border-radius: 10px 10px 0px 0px; 
+    width: 185px;
+    height: 75px;
     margin : 20px 5px 20px 5px;
     padding: 50px 20px 20px 20px;
 }
@@ -336,8 +364,39 @@ aside
 .radius-unbloc
 {
     border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 2px gray;
     width : 240px;
     height : 300px;
+    position : relative;
+    right: 25px;
+    bottom : 50px;
+}
+.radius-deuxblocs-fort
+{
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 2px gray;
+    width : 230px;
+    height : 180px;
+    position : relative;
+    right: 25px;
+    bottom : 50px;
+}
+.radius-deuxblocs-iles
+{
+    border-radius: 10px 10px 0px 0px; 
+    box-shadow: 2px 2px 2px gray;
+    width : 230px;
+    height : 80px;
+    position : relative;
+    right: 25px;
+    bottom : 50px; 
+}
+.radius-deuxblocs
+{
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 2px gray;
+    width : 230px;
+    height : 150px;
     position : relative;
     right: 25px;
     bottom : 50px;
@@ -356,37 +415,6 @@ aside
     box-shadow: 2px 2px 2px gray;
     font-weight: bold;
 }
-
-.deux-blocs
-{
-    display: flex;
-    flex-direction: column;
-}
-
-.fiche-activite-deuxblocs-fort
-{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 25% 75%;
-    border-radius: 10px 10px 0px 0px; 
-    box-shadow: 2px 2px 2px gray;
-    position : relative;
-    width: 185px;
-    height: 110px;
-    margin : 20px 5px 20px 5px;
-    padding: 50px 20px 20px 20px;
-}
-
-.radius-deuxblocs-fort
-{
-    border-radius: 10px 10px 0px 0px;
-    width : 230px;
-    height : 180px;
-    position : relative;
-    right: 25px;
-    bottom : 50px;
-}
-
 .texte-deuxblocs-fort
 {
     position : absolute;
@@ -400,31 +428,6 @@ aside
     box-shadow: 2px 2px 2px gray;
     font-weight: bold;
 }
-
-.fiche-activite-deuxblocs-iles
-{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 25% 75%;
-    border-radius: 10px 10px 0px 0px; 
-    box-shadow: 2px 2px 2px gray;
-    position : relative;
-    width: 185px;
-    height: 40px;
-    margin : 20px 5px 20px 5px;
-    padding: 50px 20px 20px 20px;
-}
-
-.radius-deuxblocs-iles
-{
-    border-radius: 10px 10px 0px 0px;
-    width : 230px;
-    height : 80px;
-    position : relative;
-    right: 25px;
-    bottom : 50px; 
-}
-
 .texte-deuxblocs-iles
 {
     position : absolute;
@@ -438,31 +441,6 @@ aside
     box-shadow: 2px 2px 2px gray;
     font-weight: bold;
 }
-
-.fiche-activite-deuxblocs
-{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 25% 75%;
-    border-radius: 10px 10px 0px 0px; 
-    box-shadow: 2px 2px 2px gray;
-    position : relative;
-    width: 185px;
-    height: 75px;
-    margin : 20px 5px 20px 5px;
-    padding: 50px 20px 20px 20px;
-}
-
-.radius-deuxblocs
-{
-    border-radius: 10px 10px 0px 0px;
-    width : 230px;
-    height : 150px;
-    position : relative;
-    right: 25px;
-    bottom : 50px;
-}
-
 .texte-deuxblocs
 {
     position : absolute;
@@ -512,255 +490,249 @@ dt
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
+
                             /* VERSION MOBILE IPHONE 8 */
 
-@media screen and (max-width: 1024px) /*Sur les écrans, quand la largeur de la fenêtre fait au maximum 1024px */
+@media screen and (max-width: 768px) /*Sur les écrans, quand la largeur de la fenêtre fait au maximum 768px */
 {
     body
     {
-        width : 100%;
+    width : 100%;
     }
 
     h1
     {
-        font-size: 1.3em;
-        font-weight: bold;
+    font-size: 1.3em;
+    font-weight: bold;
     }
 
     p, ul, dd, dt
     {
-        font-size: 0.9em;
+    font-size: 0.9em;
     }
 
     header, .titre-site, .chapeau-titre
     {
-        width: 100%;
+    width: 100%;
     }
 
     header
     {
-        box-sizing: border-box;
+    box-sizing: border-box;
     }
     /* menu navigation*/
 
     .bandeau_sup
     {
-        display: flex;
-        margin-left: 10px;
-        margin-right: 10px;
-        border-bottom: solid 3px #F2F2F2;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: solid 3px #F2F2F2;
     }
 
     #logo
     {
-        margin-left: 20px;
-        margin-right: 10px;
-        position: absolute;
+    margin-left: 20px;
+    margin-right: 10px;
+    position: absolute;
     }
 
      nav ul 
     {
-        padding-left: 10px;
-        position: relative;
-        left: 10px;
-        justify-content: flex-end;
+    padding-left: 10px;
+    position: relative;
+    left: 10px;
+    justify-content: flex-end;
     }
 
     #inscription
     {
-        order : -2;
-        color:#0065FC ;
-        font-weight: bold;
-        padding-left: 250px; 
-        border : hidden;
+    order : -2;
+    color:#0065FC ;
+    font-weight: bold;
+    padding-left: 250px; 
+    border : hidden;
     }
 
     nav li 
     {
-        padding-right: 100px;
-        line-height: 2em;
+    padding-right: 100px;
+    line-height: 2em;
     }
 
-    
     nav a:hover
     {
-        text-decoration: none;
-        color: black;
-        color: #0065FC ;
-        border-bottom: 3px solid  #0065FC;
-        padding-bottom: 20px ;
-        border-top: hidden;
+    text-decoration: none;
+    color: black;
+    color: #0065FC ;
+    border-bottom: 3px solid  #0065FC;
+    padding-bottom: 20px ;
+    border-top: hidden;
     }
 
     /* barre recherche */
     .responsive 
     {
-        display: contents;
+    display: contents;
     
     }
     .desktop
     {
-        display: none;
+    display: none;
     }
     button
     {
-       background: #0065FC; 
-       border : solid #0065FC;
-       height: 38px;
-       border-radius: 0px 10px 10px 0px;
-       cursor: pointer;
+    background: #0065FC; 
+    border : solid #0065FC;
+    height: 38px;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
     }
     .white
     {
-        color: white;
+    color: white;
     }
      
     /* Filtres*/
 
     .filtres
     {
-        width: auto;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: baseline;
-        font-weight: bold; 
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    font-weight: bold; 
     }
 
     .filtres-responsive
     {
-        display: flex;
+    display: flex;
     }
     .border_filtre
     {
-        border: #F2F2F2 solid 2px; 
-        border-radius: 20px;
-        padding-right: 10px;
-        margin : 0px 10px 10px 10px;
+    border: #F2F2F2 solid 2px; 
+    border-radius: 20px;
+    padding-right: 10px;
+    margin : 0px 10px 10px 10px;
     }
 
     /* les + populaire */
 
     .section
     {
-        display: flex;
-        flex-wrap: wrap; 
-        margin: 10px; 
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 10px; 
     }
 
     aside
     {
-        width: 100%;
-        order :1;
-        margin: 10px;
+    width: 100%;
+    order :1;
+    margin: 10px;
+    align-items: center;
     }
 
     .ensemble-plus-populaire
     {
-       display: block;
-       flex-wrap: wrap;
-       margin-left: 20px;
-       margin-right: 20px;
-       margin-bottom: 10px;
-       box-sizing: border-box; 
-       align-items: center;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
     }
 
     .descript-hotel
     {
-        position : absolute;
-        box-sizing: border-box;
-        background: white;
-        border-radius: 0px 10px 10px 0px;
-        box-shadow: 2px 2px 2px gray;
-        border: solid 5px white;
-        padding : 10px;
-        width: 160px;
-        height: 141px;
-        left : 120px;
-        top : -20px;
-        line-height: 1.3em; 
+    position : absolute;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 2px 2px 2px gray;
+    border: solid 5px white;
+    padding : 10px;
+    width: 160px;
+    height: 141px;
+    left : 120px;
+    top : -15px;
+    line-height: 1.3em; 
     }
 
     /* Hebergement  */
 
     .article
     {
-        order : 2;
-        align-items: center;
-        margin: 10px;
+    order : 2;
+    align-items: center;
+    margin: 10px;
     }
 
     .ensemble-fiches
     {
-        justify-content: space-around;
+    justify-content: space-around;
     }
     
     .fiche-hotel
     {
-        border-radius: 10px 10px 0px 0px;
-        box-shadow: 2px 2px 2px grey; 
-        border: solid 5px white;
-        position : relative;
-        width: 250px;
-        height: 75px;
-        margin : 30px 10px 50px 10px;
-        padding: 50px 20px 20px 20px;
+    position : relative;    
+    border-radius: 10px 10px 0px 0px;
+    width: 250px;
+    height: 75px;
+    margin : 30px 10px 50px 10px;
+    padding: 50px 20px 20px 20px;
     }
     
     .radius
     {
-        border-radius: 5px 5px 5px 5px;
-        width : 290px;
-        height : 150px;
-        position : relative;
-        right: 20px;
-        bottom : 50px;
+    position : relative;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 2px grey; 
+    width : 290px;
+    height : 150px;
+    right: 20px;
+    bottom : 50px;
     }
     
     .texte-hotel
     {   
-        position : absolute;
-        background: white;
-        border-radius: 0px 0px 10px 10px;
-        border: solid 5px white;
-        box-shadow: 2px 2px 2px gray;
-        width: 280px;
-        height: 60px;
-        padding : 5px;
-        top : 100px;
-        left : -5px;
-        line-height: 1.3em;
+    position : absolute;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+    border: solid 5px white;
+    box-shadow: 2px 2px 2px gray;
+    width: 280px;
+    height: 60px;
+    padding : 5px;
+    top : 100px;
+    left : 0px;
+    line-height: 1.3em;
     }
 
     /*Activites*/
 
     .ensemble-activites
     {
-        justify-content: center;
+    justify-content: center;
     }
 
     .fiche-activite-unbloc, .fiche-activite-deuxblocs, .fiche-activite-deuxblocs-fort, .fiche-activite-deuxblocs-iles
     {
-    background-size: center;
-    background-repeat: no-repeat;
-    background-position: 25% 75%;
-    border-radius: 10px 10px 0px 0px; 
-    box-shadow: 2px 2px 2px gray;
     position : relative;
+    width: 250px;
     height: 110px;
     margin : 20px 5px 50px 5px;
-    padding: 50px 20px 20px 20px;
     }
 
     .radius-unbloc, .radius-deuxblocs, .radius-deuxblocs-fort, .radius-deuxblocs-iles
     {
+    position : relative;
     border-radius: 10px 10px 0px 0px;
     box-shadow: 2px 2px 2px gray;
+    width: 300px;
     height : 190px;
-    width: 250px;
-    position : relative;
     right: 25px;
     bottom : 50px;
     }
@@ -771,7 +743,7 @@ dt
     background: white;
     border-radius: 0px 0px 10px 10px;
     padding : 10px 10px 10px 10px;
-    width: 230px;
+    width: 280px;
     height: 20px;
     top : 170px;
     left : -5px;
@@ -780,45 +752,49 @@ dt
     }
   
 }
-
                                 /* VERSION TABLETTE */
 
-/* @media all and (min width : 768px) and (max-width : 1024px)*/
+@media screen and (min-width : 768px) and (max-width : 1024px)
 
-
-
-                            /* VERSION PLUS PETIT MOBILE 
-@media screen and (max-width :768px)
 {
 
-    body 
+
+    .fiche-populaire /* Bloc de chaque hotel */
     {
-        margin: 5px;
+        position : relative;
+        margin : 100px 10px 200px 15px;
+        padding: 20px 50px 20px 20px;
+        border: hidden;
     }
 
-    .titre-site 
+    .radius-populaire /* photo hotel */
     {
-        max-width: 768px ;
+        position : relative;
+        border-radius: 10px 10px 0px 0px;
+        border: solid 5px white;
+        box-shadow: 2px 2px 2px gray;
+        width : 150px;
+        height : 140px;
+        right: 20px;
+        bottom : 20px;
+        background-size: cover;
     }
-
-    aside 
-    {
-        width: 100%;
-    }
-    .descript-hotel
+    .descript-hotel /* texte hotel */
     {
         position : absolute;
-        box-sizing: border-box;
         background: white;
-        border-radius: 0px 10px 10px 0px;
+        border-radius: 0px 0px 10px 10px;
         box-shadow: 2px 2px 2px gray;
-        border: solid 5px white;
         padding : 10px;
-        width: 140px;
-        height: 141px;
-        left : 120px;
-        top : -20px;
-        line-height: 1em; 
-    }*/
+        width: 160px;
+        height: 140px;
+        left : 0px;
+        top : 100px;
+        line-height: 1.3em; 
+    }
+    
+    
+
+
 
 }
