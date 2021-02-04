@@ -1,4 +1,3 @@
-
 /* VERSION BUREAU */
 *
 {
@@ -113,7 +112,7 @@ nav a:hover
     color: #DEEBFF
 }
 
-.filtres-responsive
+.filtres-responsive1, .filtres-responsive2
 {
     display: flex;
 }
@@ -337,13 +336,16 @@ section
     margin : 20px 20px 20px 20px;
 }
 
-.deux-blocs
+.deux-blocs, .deux-blocs-ND
 {
     display: flex;
     flex-direction: column;
 }
 
-.fiche-activite-unbloc:hover, .fiche-activite-deuxblocs:hover, .fiche-activite-deuxblocs-fort:hover, .fiche-activite-deuxblocs-iles:hover
+.fiche-activite-unbloc:hover, 
+.fiche-activite-deuxblocs:hover, 
+.fiche-activite-deuxblocs-fort:hover, 
+.fiche-activite-deuxblocs-iles:hover
 {
     transform: scale(1.1);
 }
@@ -513,10 +515,28 @@ dt
     padding-left: 40px;
 }
 
-/*  RESPONSIVE  --------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------
+ -------------------------------------RESPONSIVE  -------------------------------------------------------------
+ -------------------------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width : 1212px)/*Sur les écrans, quand la largeur de la fenêtre fait au maximum 1212px */
+@media screen and (max-width : 1213px)/*Sur les écrans, quand la largeur de la fenêtre fait au maximum 1212px */
 {
+    body
+    {
+    width : 100%;
+    }
+
+    h1
+    {
+    font-size: 1.3em;
+    font-weight: bold;
+    }
+
+    p, ul, dd, dt
+    {
+    font-size: 0.9em;
+    }
+
     .footer
     {
     display: flex;
@@ -529,7 +549,7 @@ dt
     }
 }
 
-@media screen and (max-width : 1178px)
+@media screen and (max-width : 1179px)
 {
     .fiche-hotel
     {
@@ -585,7 +605,7 @@ dt
     }
 }
 
-@media screen and (max-width : 1164px) 
+@media screen and (max-width : 1165px) 
 {
     .fiche-hotel
     {
@@ -669,7 +689,7 @@ dt
     }
 }
 
-@media screen and (max-width : 1140px)
+@media screen and (max-width : 1141px)
 {
     .section
     {
@@ -760,111 +780,199 @@ dt
 
 }
 
-
-/*@media screen and (max-width : 1016px)
+@media screen and (max-width : 1116px)
 {
-
-    .ensemble-activites
+    section 
     {
+        width : 100%;
+    }    
 
+    .deux-blocs-ND
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin : 10px 30px 20px 0px;
+    }
+
+    .fiche-activite-deuxblocs
+    {
+        position : relative;
+        border-radius: 10px 10px 0px 0px; 
+        width: 185px;
+        height: 75px;
+        margin-left: 100px;
+        margin-right: 80px;   
     }
 }
 
-@media screen and (max-width : 877px)
+@media screen and (max-width : 878px) 
 {
     .filtres
     {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-left: 30px;
+        font-weight: bold;
+    }
 
+    .filtres-responsive
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .border_filtre
+    {
+        border: #F2F2F2 solid 2px; 
+        border-radius: 20px;
+        padding-right: 5px;
+        margin-left: 30px;
     }
 }
 
-@media screen and (max-width :817px)
-{
-
-.ensemble-fiches 
-
-.fiche-hotel
-
-.ensemble-activites
+@media screen and (max-width : 816px) 
+{ 
+    .filtres-responsive1, .filtres-responsive2
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
-*/
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width : 741px) 
 {
-    body
+   .ensemble-activites
+   {
+       display: flex;
+       flex-flow: row wrap;
+   }
+
+   .deux-blocs
     {
-    width : 100%;
+       margin-right: 60px;
     }
 
-    h1
+   .deux-blocs-ND
     {
-    font-size: 1.3em;
-    font-weight: bold;
+    flex-direction: column;
     }
 
-    p, ul, dd, dt
+   .fiche-activite-deuxblocs
     {
-    font-size: 0.9em;
+       margin : 10px 30px 20px 40px;
     }
+}
 
-    header, .titre-site, .chapeau-titre
-    {
-    width: 100%;
-    }
-
-    header
-    {
-    box-sizing: border-box;
-    }
-    /* menu navigation*/
-
+@media screen and (max-width : 560px) /*en cours */
+{
     .bandeau_sup
     {
-    display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-bottom: solid 3px #F2F2F2;
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-bottom: solid 3px #F2F2F2;  
     }
-
+    
     #logo
     {
-    margin-left: 20px;
-    margin-right: 10px;
-    position: absolute;
-    }
-
-    nav ul 
-    {
-    padding-left: 10px;
-    position: relative;
-    left: 10px;
-    justify-content: flex-end;
-    }
-
-    #inscription
-    {
-    order : -2;
-    color:#0065FC ;
-    font-weight: bold;
-    padding-left: 250px; 
-    border : hidden;
-    }
-
-    nav li 
-    {
-    padding-right: 100px;
-    line-height: 2em;
+        margin-left: 20px;
+        margin-right: 10px;
     }
 
     nav a:hover
     {
-    text-decoration: none;
-    color: black;
-    color: #0065FC ;
-    border-bottom: 3px solid  #0065FC;
-    padding-bottom: 20px ;
-    border-top: hidden;
+        border-bottom: solid 3px #0065FC;
+        padding-bottom: 15px;
+        border-top: hidden;
     }
+
+    .ensemble-fiches, .ensemble-activites
+    {
+        justify-content: center;
+    }
+   
+    .deux-blocs
+    {
+        margin-left: 60px;
+    }
+
+    .deux-blocs-ND
+    {
+        margin-left: 35px;
+    }
+
+    .fiche-activite-unbloc, .fiche-activite-deuxblocs, .fiche-activite-deuxblocs-fort, .fiche-activite-deuxblocs-iles
+    {
+    position : relative;
+    width: 250px;
+    height: 110px;
+    margin : 20px 5px 50px 5px;
+    }
+
+    .image-unbloc, .image-deuxblocs, .image-deuxblocs-fort, .image-deuxblocs-iles
+    {
+    position : relative;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 2px gray;
+    width: 300px;
+    height : 190px;
+    right: 25px;
+    bottom : 50px;
+    }
+
+    .texte-unbloc, .texte-deuxblocs, .texte-deuxblocs-fort, .texte-deuxblocs-iles
+    {
+    position : absolute;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+    padding : 10px 10px 10px 10px;
+    width: 280px;
+    height: 20px;
+    top : 170px;
+    left : -5px;
+    box-shadow: 2px 2px 2px gray;
+    font-weight: bold; 
+    }
+}
+
+@media screen and (max-width: 414px) /*en cours */
+{
+     /*.
+
+    
+
+    nav ul 
+    {
+        padding-left: 10px;
+        position: relative;
+        left: 10px;
+        justify-content: flex-end;
+    }
+
+    #inscription
+    {
+        order : -2;
+        color:#0065FC ;
+        font-weight: bold;
+        padding-left: 250px; 
+        border : hidden;
+    }
+
+    nav li 
+    {
+        padding-right: 100px;
+        line-height: 2em;
+    }
+
+    main 
+    {
+        margin : 5px;
+        padding: 5px;
+    }*/
 
     /* barre recherche */
     .responsive 
@@ -1014,6 +1122,12 @@ dt
     justify-content: center;
     }
 
+    .deux-blocs-ND
+    {
+        flex-direction: column;
+        margin : 20px 30px 20px 20px;
+    }
+
     .fiche-activite-unbloc, .fiche-activite-deuxblocs, .fiche-activite-deuxblocs-fort, .fiche-activite-deuxblocs-iles
     {
     position : relative;
@@ -1049,3 +1163,5 @@ dt
   
 }
  
+
+}
