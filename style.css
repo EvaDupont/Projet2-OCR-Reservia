@@ -699,7 +699,6 @@ dt
         width: 100%;
     }
 
-    /*les + populaire */
      aside
     {
         order :1;
@@ -724,7 +723,6 @@ dt
         left : -10px;
     }
     
-    /* hebergement*/
     .article
     {
         order: 2;
@@ -867,7 +865,51 @@ dt
     }
 }
 
-@media screen and (max-width : 560px) /*en cours */
+@media screen and (max-width : 610px) 
+{
+
+    .ensemble-activites
+    {
+        display: flex;
+        flex-flow: row wrap;
+    }
+ 
+    .deux-blocs
+     {
+        margin-right: 60px;
+     }
+ 
+    .deux-blocs-ND
+     {
+     flex-direction: column;
+     }
+ 
+    .fiche-activite-deuxblocs
+     {
+        margin : 10px 30px 20px 20px;
+     }
+
+}
+
+@media screen and (max-width : 578px)
+{
+    .ensemble-fiches, .ensemble-activites
+    {
+        justify-content: center;
+    }
+   
+    .deux-blocs
+    {
+        margin-left: 60px;
+    }
+
+    .deux-blocs-ND
+    {
+        margin-left: 35px;
+    }
+}
+
+@media screen and (max-width : 560px) 
 {
     .bandeau_sup
     {
@@ -939,81 +981,72 @@ dt
     }
 }
 
-@media screen and (max-width: 414px) /*en cours */
+@media screen and (max-width: 539px) 
 {
-     /*.
-
-    
-
-    nav ul 
+    .bandeau_sup
     {
-        padding-left: 10px;
-        position: relative;
-        left: 10px;
-        justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+    .menuA
+    {
+    padding-left: 180px;
     }
 
     #inscription
     {
-        order : -2;
-        color:#0065FC ;
-        font-weight: bold;
-        padding-left: 250px; 
-        border : hidden;
+    position: relative;
+    bottom: 40px;
+    left: 360px;
+    order : -2;
+    color:#0065FC ;
+    font-weight: bold;
+    border : hidden;
+    }
+}
+
+@media screen and (max-width: 518px)
+{
+    #inscription
+    {
+    left: 350px;
+    }
+}
+
+@media screen and (max-width: 498px)
+{
+    #inscription
+    {
+    left: 330px;
     }
 
-    nav li 
+    .menuA
     {
-        padding-right: 100px;
-        line-height: 2em;
+    padding-left: 120px;
+    }
+}
+
+@media screen and (max-width: 438px) 
+{
+    #inscription
+    {
+    left: 280px;
     }
 
-    main 
+    .menuA
     {
-        margin : 5px;
-        padding: 5px;
-    }*/
+    padding-left: 100px;
+    }
 
-    /* barre recherche */
-    .responsive 
+    .filtres-responsive1, .filtres-responsive2
     {
-    display: contents;
-    
-    }
-    .desktop
-    {
-    display: none;
-    }
-    button
-    {
-    background: #0065FC; 
-    border : solid #0065FC;
-    height: 38px;
-    border-radius: 0px 10px 10px 0px;
-    cursor: pointer;
-    }
-    .white
-    {
-    color: white;
-    }
-     
-    /* Filtres*/
-
-    .filtres
-    {
-    width: auto;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-    font-weight: bold; 
+    margin-top: 30px;
     }
 
-    .filtres-responsive
-    {
-    display: flex;
-    }
     .border_filtre
     {
     border: #F2F2F2 solid 2px; 
@@ -1022,7 +1055,101 @@ dt
     margin : 0px 10px 10px 10px;
     }
 
-    /* les + populaire */
+}
+
+@media screen and (max-width: 435px)
+{
+    .filtres-responsive1, .filtres-responsive2
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .filtres-responsive2
+    {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 414px)  /*en cours */
+{
+    h1 
+    {
+        font-size: 1.7em;
+    }
+
+    p, ul, dd, dt
+    {
+        font-size: 1.2em;
+    }
+
+    .bandeau_sup
+    {
+        width : auto;
+    }
+
+   #inscription
+   {
+       left : 280px;
+       padding-top: 20px;
+   }
+
+   .menuA
+   {
+       padding-left: 40px;
+   }
+
+    .responsive 
+    {
+        display: contents;
+    }
+
+    .desktop
+    {
+        display: none;
+    }
+
+    button
+    {
+        background: #0065FC; 
+        border : solid #0065FC;
+        height: 38px;
+        border-radius: 0px 10px 10px 0px;
+        cursor: pointer;
+    }
+
+    .white
+    {
+        color: white;
+    }
+     
+    /* A faire */
+    .filtres
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-left: 30px;
+        font-weight: bold;
+    }
+
+    .filtres-responsive
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .border_filtre
+    {
+        border: #F2F2F2 solid 2px; 
+        border-radius: 20px;
+        padding-right: 5px;
+        margin-left: 30px;
+    }
+
+
+
 
     .section
     {
@@ -1065,7 +1192,7 @@ dt
     line-height: 1.3em; 
     }
 
-    /* Hebergement  */
+ 
 
     .article
     {
@@ -1115,7 +1242,7 @@ dt
     line-height: 1.3em;
     }
 
-    /*Activites*/
+    
 
     .ensemble-activites
     {
