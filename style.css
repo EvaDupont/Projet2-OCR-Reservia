@@ -916,7 +916,6 @@ dt
         display: flex;
         margin-left: 10px;
         margin-right: 10px;
-        border-bottom: solid 3px #F2F2F2;  
     }
     
     #logo
@@ -1073,35 +1072,76 @@ dt
 
 @media screen and (max-width: 414px)  /*en cours */
 {
-    h1 
+    h1, #hebergement, #titre-populaire, #titre-activites 
     {
         font-size: 1.7em;
     }
 
-    p, ul, dd, dt
+    p, ul, dd, dt, #afficher-plus
     {
         font-size: 1.2em;
     }
 
-    .bandeau_sup
+    header /* A FAIRE */
     {
-        width : auto;
+        width : 100%;
+        margin : 10px;
     }
 
-   #inscription
-   {
-       left : 280px;
+    .bandeau_sup /* A FAIRE */
+    {
+        width : 100%;
+        padding-left : 10px;
+        border: solid 3px red;  
+    }
+
+    .survol /* A FAIRE */
+    {
+        display: flex;
+        
+    }
+    .bandeau-survol1 /* A FAIRE */
+    {
+        border-top: solid 3px greenyellow;
+        width: 100%;
+        
+    }
+    .bandeau-survol2 /* A FAIRE */
+    {
+        border-top: solid 3px green;
+        width: 100%;   
+    }
+
+    .bandeau-survol1:hover, .bandeau-survol2:hover/* A FAIRE */
+    {
+        color: #0065FC;
+    }
+
+    #logo
+    {
+        margin-left: 5px;
+    }
+
+    #inscription
+    {
+       left : 320px;
        padding-top: 20px;
-   }
+    }
 
    .menuA
-   {
+    {
        padding-left: 40px;
-   }
+    }
 
     .responsive 
     {
         display: contents;
+    }
+
+    #texte-ville
+    {
+        width: 280px;
+        font-size: 1.2em;
     }
 
     .desktop
@@ -1123,7 +1163,6 @@ dt
         color: white;
     }
      
-    /* A faire */
     .filtres
     {
         display: flex;
@@ -1133,159 +1172,173 @@ dt
         font-weight: bold;
     }
 
-    .filtres-responsive
+    .filtres-responsive1, .filtres-responsive2
     {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        margin-top: 5px;
     }
 
     .border_filtre
     {
         border: #F2F2F2 solid 2px; 
-        border-radius: 20px;
+        border-radius: 25px;
         padding-right: 5px;
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
-
-
+    .info
+    {
+        width :100%;
+    }
 
     .section
     {
-    display: flex;
-    flex-wrap: wrap; 
-    margin: 10px; 
+        width : 100%;
+        display: flex;
+        flex-wrap: wrap; 
+        margin: 10px; 
     }
 
     aside
     {
-    width: 100%;
-    order :1;
-    margin: 10px;
-    align-items: center;
+        width: 100%;
+        order :1;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        align-items: center;
+        border-radius: 0px;
     }
 
     .ensemble-plus-populaire
     {
-    display: block;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
+        justify-content: center;
     }
 
-    .descript-hotel
+    .fiche-populaire
     {
-    position : absolute;
-    box-sizing: border-box;
-    background: white;
-    border-radius: 0px 10px 10px 0px;
-    box-shadow: 2px 2px 2px gray;
-    border: solid 5px white;
-    padding : 10px;
-    width: 160px;
-    height: 141px;
-    left : 120px;
-    top : -15px;
-    line-height: 1.3em; 
+        margin-bottom: 5px;
     }
-
- 
+    
+    .image-populaire 
+    {
+        position : relative;
+        border-radius: 20px 0px 0px 20px;
+        border: solid 5px white;
+        width : 200px;
+        height : 180px;
+        right: 110px;
+        bottom : 20px;
+        background-size: cover;
+    }
+    
+    .descript-hotel 
+    {
+        position : absolute;
+        background:white;
+        border-radius: 0px 20px 20px 0px;
+        border: solid 5px white;
+        padding : 10px;
+        width: 180px;
+        height: 160px; 
+        left : 70px;
+        top :-20px;
+    }
 
     .article
     {
-    order : 2;
-    align-items: center;
-    margin: 10px;
+        width: 100%;
+        order : 2;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        align-items: center;
+        background: none;
     }
 
+    #hebergement
+    {
+        padding-top: 10px;
+    }
     .ensemble-fiches
     {
-    justify-content: space-around;
+        justify-content: center;
     }
     
     .fiche-hotel
     {
-    position : relative;    
-    border-radius: 10px 10px 0px 0px;
-    width: 250px;
-    height: 75px;
-    margin : 30px 10px 50px 10px;
-    padding: 50px 20px 20px 20px;
+        position : relative;    
+        border-radius: 20px 20px 0px 0px;
+        padding-bottom: 50px;
     }
     
     .image
     {
-    position : relative;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: 2px 2px 2px grey; 
-    width : 290px;
-    height : 150px;
-    right: 20px;
-    bottom : 50px;
+        position : relative;
+        border-radius: 20px 20px 0px 0px;
+        width : 370px;
+        height : 180px;
+        right: 40px;
+        bottom : 50px;
     }
     
     .texte-hotel
     {   
-    position : absolute;
-    background: white;
-    border-radius: 0px 0px 10px 10px;
-    border: solid 5px white;
-    box-shadow: 2px 2px 2px gray;
-    width: 280px;
-    height: 60px;
-    padding : 5px;
-    top : 100px;
-    left : 0px;
-    line-height: 1.3em;
+        position : absolute;
+        background: white;
+        border-radius: 0px 0px 20px 20px;
+        border: solid 5px white;
+        box-shadow: 2px 2px 2px gray;
+        width: 360px;
+        height: 80px;
+        padding : 5px;
+        top : 100px;
+        left : -20px;
+        line-height: 1.3em;
     }
-
-    
-
+ 
     .ensemble-activites
     {
-    justify-content: center;
+        justify-content: center;
+        padding-top: 20px;
     }
 
     .deux-blocs-ND
     {
         flex-direction: column;
-        margin : 20px 30px 20px 20px;
+        
     }
 
     .fiche-activite-unbloc, .fiche-activite-deuxblocs, .fiche-activite-deuxblocs-fort, .fiche-activite-deuxblocs-iles
     {
-    position : relative;
-    width: 250px;
-    height: 110px;
-    margin : 20px 5px 50px 5px;
+        position : relative;
+        width: 250px;
+        height: 110px;
+        padding-bottom: 50px;
     }
 
     .image-unbloc, .image-deuxblocs, .image-deuxblocs-fort, .image-deuxblocs-iles
     {
-    position : relative;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: 2px 2px 2px gray;
-    width: 300px;
-    height : 190px;
-    right: 25px;
-    bottom : 50px;
+        position : relative;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 2px 2px 2px gray;
+        width: 370px;
+        height : 240px;
+        right: 60px;
+        bottom : 50px;
     }
 
     .texte-unbloc, .texte-deuxblocs, .texte-deuxblocs-fort, .texte-deuxblocs-iles
     {
-    position : absolute;
-    background: white;
-    border-radius: 0px 0px 10px 10px;
-    padding : 10px 10px 10px 10px;
-    width: 280px;
-    height: 20px;
-    top : 170px;
-    left : -5px;
-    box-shadow: 2px 2px 2px gray;
-    font-weight: bold; 
+        position : absolute;
+        background: white;
+        border-radius: 0px 0px 20px 20px;
+        padding : 10px 10px 10px 10px;
+        width: 350px;
+        height: 30px;
+        top : 180px;
+        left : -40px;
+        box-shadow: 2px 2px 2px gray;
+        font-weight: bold; 
     }
   
 }
