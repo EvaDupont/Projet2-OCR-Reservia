@@ -21,7 +21,7 @@ p, ul, dd, dt
 }
 
 /* logo - menu navigation*/
-#logo
+#logo-D, #logo-R 
 {
     width:77px;
     height:36px;
@@ -32,6 +32,11 @@ p, ul, dd, dt
     display: flex;
     margin-left: 30px;
     justify-content: space-between;
+}
+
+.bandeau_supIPH
+{
+    display: none;
 }
 
 a
@@ -55,7 +60,7 @@ nav a:hover
     border-top: 1px solid  #0065FC;
     padding-top: 10px;
 }
-#inscription
+#inscription-D, #inscription-R
 {
     color:#0065FC ;
     font-weight: bold;
@@ -911,26 +916,6 @@ dt
 
 @media screen and (max-width : 560px) 
 {
-    .bandeau_sup
-    {
-        display: flex;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
-    #logo
-    {
-        margin-left: 20px;
-        margin-right: 10px;
-    }
-
-    nav a:hover
-    {
-        border-bottom: solid 3px #0065FC;
-        padding-bottom: 15px;
-        border-top: hidden;
-    }
-
     .ensemble-fiches, .ensemble-activites
     {
         justify-content: center;
@@ -982,62 +967,54 @@ dt
 
 @media screen and (max-width: 539px) 
 {
+    
     .bandeau_sup
     {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+        display: none
     }
 
-    .menuA
+    .bandeau_supIPH
     {
-    padding-left: 180px;
+        display: contents;
     }
 
-    #inscription
+    .logo-inscription
     {
-    position: relative;
-    bottom: 40px;
-    left: 360px;
-    order : -2;
-    color:#0065FC ;
-    font-weight: bold;
-    border : hidden;
-    }
-}
-
-@media screen and (max-width: 518px)
-{
-    #inscription
-    {
-    left: 350px;
-    }
-}
-
-@media screen and (max-width: 498px)
-{
-    #inscription
-    {
-    left: 330px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 20px 5px 30px;
     }
 
-    .menuA
+    .HetA 
     {
-    padding-left: 120px;
+        display: flex;
+        margin-left: 30px;
     }
+
+    .H, .A
+    {
+        border-bottom: solid 3px #F2F2F2;
+        width: 50%;
+        padding-bottom: 10px;
+        text-align: center;
+        
+    }
+
+    .H:hover, .A:hover
+    {
+        border-bottom: solid 3px #0065FC;
+        color: #0065FC;
+    }
+
+   .menuH:hover, .menuA:hover
+   {
+       color: #0065FC;
+   }
+
 }
 
 @media screen and (max-width: 438px) 
 {
-    #inscription
-    {
-    left: 280px;
-    }
-
-    .menuA
-    {
-    padding-left: 100px;
-    }
 
     .filtres-responsive1, .filtres-responsive2
     {
@@ -1053,7 +1030,6 @@ dt
     padding-right: 10px;
     margin : 0px 10px 10px 10px;
     }
-
 }
 
 @media screen and (max-width: 435px)
@@ -1070,67 +1046,21 @@ dt
     }
 }
 
-@media screen and (max-width: 414px)  /*en cours */
+@media screen and (max-width: 414px)  
 {
     h1, #hebergement, #titre-populaire, #titre-activites 
     {
         font-size: 1.7em;
     }
 
-    p, ul, dd, dt, #afficher-plus
+    #afficher-plus
+    {
+        font-size: 1.5em;
+    }
+
+    p, ul, dd, dt
     {
         font-size: 1.2em;
-    }
-
-    header /* A FAIRE */
-    {
-        width : 100%;
-        margin : 10px;
-    }
-
-    .bandeau_sup /* A FAIRE */
-    {
-        width : 100%;
-        padding-left : 10px;
-        border: solid 3px red;  
-    }
-
-    .survol /* A FAIRE */
-    {
-        display: flex;
-        
-    }
-    .bandeau-survol1 /* A FAIRE */
-    {
-        border-top: solid 3px greenyellow;
-        width: 100%;
-        
-    }
-    .bandeau-survol2 /* A FAIRE */
-    {
-        border-top: solid 3px green;
-        width: 100%;   
-    }
-
-    .bandeau-survol1:hover, .bandeau-survol2:hover/* A FAIRE */
-    {
-        color: #0065FC;
-    }
-
-    #logo
-    {
-        margin-left: 5px;
-    }
-
-    #inscription
-    {
-       left : 320px;
-       padding-top: 20px;
-    }
-
-   .menuA
-    {
-       padding-left: 40px;
     }
 
     .responsive 
@@ -1188,6 +1118,7 @@ dt
     .info
     {
         width :100%;
+        margin-left: 15px;
     }
 
     .section
@@ -1257,7 +1188,7 @@ dt
 
     #hebergement
     {
-        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .ensemble-fiches
     {
@@ -1295,6 +1226,11 @@ dt
         left : -20px;
         line-height: 1.3em;
     }
+
+    #titre-activites
+    {
+        padding-left: 20px;
+    }
  
     .ensemble-activites
     {
@@ -1305,7 +1241,6 @@ dt
     .deux-blocs-ND
     {
         flex-direction: column;
-        
     }
 
     .fiche-activite-unbloc, .fiche-activite-deuxblocs, .fiche-activite-deuxblocs-fort, .fiche-activite-deuxblocs-iles
@@ -1341,7 +1276,10 @@ dt
         font-weight: bold; 
     }
   
+    footer
+    {
+        width : auto;
+    }
 }
- 
 
 }
