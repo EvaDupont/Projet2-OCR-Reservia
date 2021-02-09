@@ -3,18 +3,15 @@
 {
     font-family: "Raleway", sans-serif;
 }
-
 h1, #hebergement, #titre-populaire, #titre-activites, #graph
 {
     font-size: 1.3em;
     font-weight: bold;
 }
-
 p, ul, dd, dt
 {
     font-size: 1em;
 }
-
 .titre-site, .chapeau-titre
 {
     margin-left: 30px;
@@ -26,14 +23,12 @@ p, ul, dd, dt
     width:77px;
     height:36px;
 }
-
 .bandeau_sup
 {
     display: flex;
     margin-left: 30px;
     justify-content: space-between;
 }
-
 .bandeau_supIPH
 {
     display: none;
@@ -85,8 +80,7 @@ nav a:hover
     border:1px solid #F2F2F2;
     padding : 10px 10px 10px 10px;
     font-weight: bold;
-    color : black;
-    
+    color : black;  
 }
 #texte_recherche
 {
@@ -97,7 +91,6 @@ nav a:hover
     color: #F2F2F2;
     cursor: pointer;
 }
-
 .responsive
 {
     display: none;
@@ -116,19 +109,16 @@ nav a:hover
 {
     color: #DEEBFF
 }
-
 .filtres-responsive1, .filtres-responsive2
 {
     display: flex;
 }
-
 .filtres
 {
    display: flex;
    align-items: baseline;
    margin-left: 30px;
    font-weight: bold;
-   
 }
 .border_filtre
 {
@@ -149,7 +139,6 @@ nav a:hover
 {
     margin-left: 30px;
 }
-
 .fa-stack
 {
     margin-left:-10px;
@@ -163,7 +152,6 @@ nav a:hover
     margin-bottom: 20px;
     margin-top: 30px;
 }
-
 .article
 {
     background: #F2F2F2;
@@ -171,19 +159,16 @@ nav a:hover
     border-radius: 10px;
     flex: 2;
 }
-
 #hebergement
 {
     padding: 30px 20px 10px 20px;
     font-weight: bold;
 }
-
 #afficher-plus
 {
     padding: 50px 20px 0px 20px;
     font-weight: bold; 
 }
-
 .ensemble-fiches
 {
     display: flex;
@@ -192,7 +177,6 @@ nav a:hover
     margin-left : 15px;
     margin-right: 15px;
 }
-  
 .fiche-hotel
 {
     position : relative;
@@ -202,12 +186,10 @@ nav a:hover
     margin : 15px 10px 70px 10px;
     padding: 50px 20px 20px 20px;    
 }
-
 .fiche-hotel:hover 
 {
     transform: scale(1.1);
 }
-
 .image
 {
     border-radius: 10px 10px 0px 0px; 
@@ -219,7 +201,6 @@ nav a:hover
     right: 20px;
     bottom : 50px;
 }
-
 .texte-hotel
 {   
     position : absolute;
@@ -251,7 +232,6 @@ aside
     padding: 30px 20px 10px 20px;
     font-weight : bold;
 }
-
 .ensemble-plus-populaire /* bloc des 3 fiches hotels */
 {
    display: flex;
@@ -260,7 +240,6 @@ aside
    margin: 0px 20px 10px 20px;
    width: 100%;
 }
-
 .fiche-populaire /* Bloc de chaque hotel */
 {
     position : relative;
@@ -270,12 +249,10 @@ aside
     margin : 15px 10px 45px 15px;
     padding: 20px 50px 20px 20px;
 }
-
 .fiche-populaire:hover 
 {
     transform: scale(1.1);
 }
-
 .image-populaire /* photo hotel */
 {
     border-radius: 10px 0px 0px 10px;
@@ -288,7 +265,6 @@ aside
     bottom : 20px;
     background-size: cover;
 }
-
 .descript-hotel /* texte hotel */
 {
     position : absolute;
@@ -310,12 +286,10 @@ section
 {
     margin-top: 30px;
 }
-
 #titre-activites
 {
     margin-left: 30px;
 }
-
 .ensemble-activites
 {
     display: flex;
@@ -324,15 +298,15 @@ section
     margin-left: 30px;
     margin-right: 30px;
 }
-
-.deux-blocs, .deux-blocs-ND
+.deux-blocs, .deux-blocs-ND-P
 {
     display: flex;
     flex-direction: column;
 }
 
 .fiche-activite-unbloc:hover, 
-.fiche-activite-deuxblocs:hover, 
+.fiche-activite-ND:hover, 
+.fiche-activite-P:hover, 
 .fiche-activite-deuxblocs-fort:hover, 
 .fiche-activite-deuxblocs-iles:hover
 {
@@ -366,7 +340,9 @@ section
     margin : 20px 5px 20px 5px;
     padding: 50px 20px 20px 20px;
 }
-.fiche-activite-deuxblocs
+
+.fiche-activite-ND, 
+.fiche-activite-P
 {
     position : relative;
     border-radius: 10px 10px 0px 0px; 
@@ -406,7 +382,8 @@ section
     right: 25px;
     bottom : 50px; 
 }
-.image-deuxblocs
+.image-deuxblocs-ND, 
+.image-deuxblocs-P
 {
     border-radius: 10px 10px 0px 0px;
     box-shadow: 2px 2px 2px gray;
@@ -456,7 +433,7 @@ section
     box-shadow: 2px 2px 2px gray;
     font-weight: bold;
 }
-.texte-deuxblocs
+.texte-deuxblocs-ND, .texte-deuxblocs-P
 {
     position : absolute;
     background: white;
@@ -766,7 +743,7 @@ dt
 @media screen and (max-width : 1116px)
 {
 
-    .deux-blocs-ND
+    .deux-blocs-ND-P
     {
         display: flex;
         flex-direction: row;
@@ -774,7 +751,7 @@ dt
         margin : 10px 30px 20px 0px;
     }
 
-    .fiche-activite-deuxblocs
+    .fiche-activite-ND, .fiche-activite-P
     {
         position : relative;
         border-radius: 10px 10px 0px 0px; 
@@ -816,15 +793,22 @@ dt
         margin : 10px;
     }
 
-    .fiche-activite-unbloc, .fiche-activite-deuxblocs, .fiche-activite-deuxblocs-fort, .fiche-activite-deuxblocs-iles
+    .fiche-activite-unbloc, 
+    .fiche-activite-ND, 
+    .fiche-activite-P,
+    .fiche-activite-deuxblocs-fort, 
+    .fiche-activite-deuxblocs-iles
     {
         position : relative;
         width: 260px;
         height: 100px;
         margin : 20px 5px 50px 5px;
     }
-
-    .image-unbloc, .image-deuxblocs, .image-deuxblocs-fort, .image-deuxblocs-iles
+    .image-unbloc, 
+    .image-deuxblocs-ND, 
+    .image-deuxblocs-P, 
+    .image-deuxblocs-fort, 
+    .image-deuxblocs-iles
     {
         position : relative;
         border-radius: 10px 10px 0px 0px;
@@ -835,7 +819,11 @@ dt
         bottom : 50px;
     }
 
-    .texte-unbloc, .texte-deuxblocs, .texte-deuxblocs-fort, .texte-deuxblocs-iles
+    .texte-unbloc, 
+    .texte-deuxblocs-ND,
+    .texte-deuxblocs-P, 
+    .texte-deuxblocs-fort, 
+    .texte-deuxblocs-iles
     {
         position : absolute;
         background: white;
@@ -874,7 +862,7 @@ dt
        margin-right: 60px;
     }
 
-   .deux-blocs-ND
+   .deux-blocs-ND-P
     {
     flex-direction: column;
     }
@@ -895,16 +883,17 @@ dt
         margin-right: 60px;
      }
  
-    .deux-blocs-ND
+    .deux-blocs-ND-P
      {
         display: flex;
         flex-direction: column;
         justify-content: center;
      }
  
-    .fiche-activite-deuxblocs
+     .fiche-activite-ND, .fiche-activite-P
      {
-        margin : 10px 30px 20px 0px;
+        margin : 10px 30px 20px 5px;
+        padding-bottom: 60px;
      }
 
 }
@@ -921,7 +910,7 @@ dt
         margin-left: 60px;
     }
 
-    .deux-blocs-ND
+    .deux-blocs-ND-P
     {
         margin-left: 35px;
     }
@@ -939,7 +928,7 @@ dt
         margin-left: 60px;
     }
 
-    .deux-blocs-ND
+    .deux-blocs-ND-P
     {
         margin-left: 35px;
     }
@@ -1208,7 +1197,7 @@ dt
         width: 110%;
     }
 
-    .deux-blocs-ND
+    .deux-blocs-ND-P
     {
         display: flex;
         flex-direction: column;
@@ -1216,15 +1205,27 @@ dt
         padding-left: 30px;
     }
 
-    .fiche-activite-unbloc, .fiche-activite-deuxblocs, .fiche-activite-deuxblocs-fort, .fiche-activite-deuxblocs-iles
+    .fiche-activite-unbloc, 
+    .fiche-activite-deuxblocs-fort, 
+    .fiche-activite-deuxblocs-iles,
+    .fiche-activite-P
     {
-        position : relative;
         width: 250px;
         height: 110px;
         padding-bottom: 50px;
     }
 
-    .image-unbloc, .image-deuxblocs, .image-deuxblocs-fort, .image-deuxblocs-iles
+    .fiche-activite-ND 
+    
+    {
+        padding-bottom: 100px;
+    }
+
+    .image-unbloc, 
+    .image-deuxblocs-ND, 
+    .image-deuxblocs-P,
+    .image-deuxblocs-fort, 
+    .image-deuxblocs-iles
     {
         position : relative;
         border-radius: 20px 20px 20px 20px;
@@ -1235,7 +1236,11 @@ dt
         bottom : 50px;
     }
 
-    .texte-unbloc, .texte-deuxblocs, .texte-deuxblocs-fort, .texte-deuxblocs-iles
+    .texte-unbloc, 
+    .texte-deuxblocs-ND, 
+    .texte-deuxblocs-P,
+    .texte-deuxblocs-fort, 
+    .texte-deuxblocs-iles
     {
         position : absolute;
         background: white;
