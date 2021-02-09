@@ -10,7 +10,7 @@ h1, #hebergement, #titre-populaire, #titre-activites, #graph
 }
 p, ul, dd, dt
 {
-    font-size: 1em;
+    font-size: 0.9em;
 }
 .titre-site, .chapeau-titre
 {
@@ -109,7 +109,7 @@ nav a:hover
 {
     color: #DEEBFF
 }
-.filtres-responsive1, .filtres-responsive2
+.filtres-responsive1
 {
     display: flex;
 }
@@ -276,7 +276,7 @@ aside
     width: 155px;
     height: 110px;
     left : 130px;
-    top : -16px;
+    top : -15px;
     line-height: 1.3em; 
 }
 
@@ -356,7 +356,7 @@ section
 {
     border-radius: 10px 10px 0px 0px;
     box-shadow: 2px 2px 2px gray;
-    width : 240px;
+    width : 230px;
     height : 300px;
     position : relative;
     right: 25px;
@@ -400,7 +400,7 @@ section
     background:white;
     border-radius: 0px 0px 10px 10px;
     padding : 10px 10px 10px 10px;
-    width: 222px;
+    width: 210px;
     height: 20px;
     top : 285px;
     left : -5px;
@@ -661,7 +661,7 @@ dt
         justify-content: space-between;
     }
 
-     aside
+    aside
     {
         order :1;
         width : auto;
@@ -676,7 +676,6 @@ dt
         display: flex;
         flex-direction: row;
         justify-content: center;
-
     }
 
     .fiche-populaire
@@ -742,7 +741,6 @@ dt
 
 @media screen and (max-width : 1116px)
 {
-
     .deux-blocs-ND-P
     {
         display: flex;
@@ -764,6 +762,68 @@ dt
 
 @media screen and (max-width : 878px) 
 { 
+    .ensemble-plus-populaire
+    {
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .fiche-populaire
+    {
+        position : relative;
+        border-radius: 10px 0px 0px 10px; 
+        height: 120px;
+        margin : 15px 10px 70px 15px;
+        padding: 20px 10px 70px 20px;
+    }
+    
+    .image-populaire 
+    {
+        position : relative;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 2px 2px 2px gray;
+        border: solid 5px white;
+        width : 150px;
+        height : 130px;
+        right: 20px;
+        bottom : 20px;
+        background-size: cover;
+    }
+    
+    .descript-hotel 
+    {
+        position : absolute;
+        background:white;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 2px 2px 2px gray;
+        border: solid 5px white;
+        padding : 10px;
+        width: 130px;
+        height: 100px; 
+        top : 120px;
+        left : 0px;
+    }
+
+    .ensemble-activites
+    {
+        display: flex;
+        margin : 5px 10px 5px 10px;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width : 860px)
+{
+    .ensemble-fiches
+    {
+       justify-content: space-around;  
+    }
+
+}
+
+@media screen and (max-width : 816px)
+{
     .filtres
     {
         display: flex;
@@ -773,7 +833,7 @@ dt
         font-weight: bold;
     }
 
-    .filtres-responsive
+    .filtres-responsive1
     {
         display: flex;
         flex-wrap: wrap;
@@ -790,72 +850,41 @@ dt
 
     .ensemble-activites
     {
-        margin : 10px;
+        margin-left : 20px;
+        margin-right : 20px;
     }
 
-    .fiche-activite-unbloc, 
     .fiche-activite-ND, 
-    .fiche-activite-P,
-    .fiche-activite-deuxblocs-fort, 
-    .fiche-activite-deuxblocs-iles
+    .fiche-activite-P
     {
         position : relative;
-        width: 260px;
+        width: 230px;
         height: 100px;
-        margin : 20px 5px 50px 5px;
+        margin : 5px 5px 5px 5px;
+        padding-right: 5px;
     }
-    .image-unbloc, 
+
     .image-deuxblocs-ND, 
-    .image-deuxblocs-P, 
-    .image-deuxblocs-fort, 
-    .image-deuxblocs-iles
+    .image-deuxblocs-P 
     {
         position : relative;
         border-radius: 10px 10px 0px 0px;
         box-shadow: 2px 2px 2px gray;
-        width: 290px;
-        height : 180px;
+        width: 230px;
+        height : 130px;
         right: 25px;
         bottom : 50px;
     }
-
-    .texte-unbloc, 
-    .texte-deuxblocs-ND,
-    .texte-deuxblocs-P, 
-    .texte-deuxblocs-fort, 
-    .texte-deuxblocs-iles
-    {
-        position : absolute;
-        background: white;
-        border-radius: 0px 0px 10px 10px;
-        padding : 10px 10px 10px 10px;
-        width: 270px;
-        height: 20px;
-        top : 160px;
-        left : -5px;
-        box-shadow: 2px 2px 2px gray;
-        font-weight: bold; 
-    }
-
 }
 
-@media screen and (max-width : 816px) 
-{ 
-    .filtres-responsive1, .filtres-responsive2
-    {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width : 741px) 
+@media screen and (max-width : 780px)
 {
-   .ensemble-activites
-   {
+    .ensemble-activites
+    {
        display: flex;
        flex-flow: row wrap;
-   }
+       justify-content: space-around;
+    }
 
    .deux-blocs
     {
@@ -864,23 +893,45 @@ dt
 
    .deux-blocs-ND-P
     {
-    flex-direction: column;
+        flex-direction: column;
     }
-
 }
 
-@media screen and (max-width : 610px) 
+@media screen and (max-width : 768px)
 {
+    .ensemble-fiches
+    {
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 
+    .ensemble-activites
+    {
+        margin-left: 80px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width : 668px)
+{
+    .ensemble-fiches
+    {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width : 665px)
+{
     .ensemble-activites
     {
         display: flex;
         flex-flow: row wrap;
     }
  
-    .deux-blocs
+    .deux-blocs, .deux-blocs-ND-P
      {
-        margin-right: 60px;
+        margin-left: 50px;
      }
  
     .deux-blocs-ND-P
@@ -892,47 +943,41 @@ dt
  
      .fiche-activite-ND, .fiche-activite-P
      {
-        margin : 10px 30px 20px 5px;
-        padding-bottom: 60px;
+        margin : 10px 30px 10px 30px;
      }
 
 }
 
-@media screen and (max-width : 578px)
+@media screen and (max-width : 620px)
 {
-    .ensemble-fiches, .ensemble-activites
+    .filtres
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-left: 10px;
+        font-weight: bold;
+        width: 110%;
+    }
+
+    .border_filtre
+    {
+        border: #F2F2F2 solid 2px; 
+        border-radius: 25px;
+        padding-right: 5px;
+        margin-left: 20px;
+    }
+
+    .ensemble-fiches
     {
         justify-content: center;
     }
-   
-    .deux-blocs
-    {
-        margin-left: 60px;
-    }
 
-    .deux-blocs-ND-P
-    {
-        margin-left: 35px;
-    }
-}
-
-@media screen and (max-width : 560px) 
-{
-    .ensemble-fiches, .ensemble-activites
+    .ensemble-activites
     {
         justify-content: center;
     }
-   
-    .deux-blocs
-    {
-        margin-left: 60px;
-    }
-
-    .deux-blocs-ND-P
-    {
-        margin-left: 35px;
-    }
-
+    
 }
 
 @media screen and (max-width: 539px) 
@@ -986,7 +1031,7 @@ dt
 @media screen and (max-width: 438px) 
 {
 
-    .filtres-responsive1, .filtres-responsive2
+    .filtres-responsive1
     {
     display: flex;
     flex-direction: column;
@@ -1004,20 +1049,16 @@ dt
 
 @media screen and (max-width: 435px)
 {
-    .filtres-responsive1, .filtres-responsive2
+    .filtres-responsive1
     {
         display: flex;
         flex-direction: row;
-    }
-
-    .filtres-responsive2
-    {
-        margin-top: 10px;
     }
 }
 
 @media screen and (max-width: 415px)  
 {
+    
     h1, #titre-populaire, #hebergement, #titre-activites, #graph 
     {
         font-size: 1.7em;
@@ -1069,19 +1110,9 @@ dt
         color: white;
     }
      
-    .filtres
+    .filtres-responsive1
     {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        margin-left: 10px;
-        font-weight: bold;
-        width: 110%;
-    }
-
-    .filtres-responsive1, .filtres-responsive2
-    {
-        margin-top: 5px;
+        margin-top: 2px;
     }
 
     .border_filtre
@@ -1147,16 +1178,16 @@ dt
     {
         order : 2;
         margin-top: 5px;
-        margin-left: 5px;
+        margin-left: 15px;
         margin-right: 5px;
-        align-items: center;
         background: none;
         width: 110%;
     }
 
     .ensemble-fiches
     {
-        justify-content: center;
+        width: 100%;
+        margin: 20px;
     }
     
     .fiche-hotel
@@ -1193,8 +1224,13 @@ dt
 
     .ensemble-activites
     {
-        justify-content: center;
-        width: 110%;
+        width: 100%;
+        margin : 30px;
+    }
+
+    .deux-blocs 
+    {
+        padding-left : 10px;
     }
 
     .deux-blocs-ND-P
@@ -1202,7 +1238,7 @@ dt
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-left: 30px;
+        margin-left : 20px;
     }
 
     .fiche-activite-unbloc, 
@@ -1212,11 +1248,10 @@ dt
     {
         width: 250px;
         height: 110px;
-        padding-bottom: 50px;
+        padding-bottom: 80px;
     }
 
     .fiche-activite-ND 
-    
     {
         padding-bottom: 100px;
     }
@@ -1251,11 +1286,11 @@ dt
         top : 180px;
         left : -40px;
         box-shadow: 2px 2px 2px gray;
-        font-weight: bold; 
+        font-weight: bold; */
     }
   
     footer 
     {
-        width : 110%;
+        width : 115%;
     }
 }
