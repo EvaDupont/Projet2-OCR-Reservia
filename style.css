@@ -146,7 +146,7 @@ nav a:hover
 
 /*section Hébergement */
 
-.section
+.section-H
 {
     display: flex;
     margin-bottom: 20px;
@@ -282,7 +282,7 @@ aside
 
 /* Activités */
 
-section 
+.section-A 
 {
     margin-top: 30px;
 }
@@ -654,7 +654,7 @@ dt
 
 @media screen and (max-width : 1141px)
 {
-    .section
+    .section-H
     {
         display: flex; 
         flex-direction: column;
@@ -982,7 +982,6 @@ dt
 
 @media screen and (max-width: 539px) 
 {
-    
     .bandeau_sup
     {
         display: none
@@ -1030,7 +1029,6 @@ dt
 
 @media screen and (max-width: 438px) 
 {
-
     .filtres-responsive1
     {
     display: flex;
@@ -1057,8 +1055,7 @@ dt
 }
 
 @media screen and (max-width: 415px)  
-{
-    
+{  
     h1, #titre-populaire, #hebergement, #titre-activites, #graph 
     {
         font-size: 1.7em;
@@ -1127,7 +1124,7 @@ dt
     {
         width: 110%;
     }
-    .section
+    .section-H
     {
         display: flex;
         flex-wrap: wrap; 
